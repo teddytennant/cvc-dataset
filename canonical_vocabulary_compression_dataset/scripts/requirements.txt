@@ -1,0 +1,6 @@
+numpy>=1.21.0
+torch>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+bert-score>=0.3.13
+nltk>=3.8.1

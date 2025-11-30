@@ -1,0 +1,219 @@
+{
+  "metadata": {
+    "description": "Benchmark tasks for evaluating CVC effectiveness",
+    "tasks": ["classification", "semantic_similarity", "question_answering", "generation"],
+    "version": "1.0"
+  },
+  "classification_tasks": [
+    {
+      "task_id": "sentiment_1",
+      "text": "The movie was absolutely terrible and disappointing.",
+      "canonical_text": "The movie was very bad and disappointing.",
+      "label": "negative",
+      "difficulty": "easy"
+    },
+    {
+      "task_id": "sentiment_2",
+      "text": "I felt elated after receiving the magnificent gift.",
+      "canonical_text": "I felt happy after getting the big gift.",
+      "label": "positive",
+      "difficulty": "medium"
+    },
+    {
+      "task_id": "sentiment_3",
+      "text": "The service was adequate but the food was superb.",
+      "canonical_text": "The service was adequate but the food was good.",
+      "label": "mixed",
+      "difficulty": "hard"
+    },
+    {
+      "task_id": "topic_1",
+      "text": "The rapid advancement in artificial intelligence has transformed numerous industries.",
+      "canonical_text": "The fast advancement in artificial intelligence has changed many industries.",
+      "label": "technology",
+      "difficulty": "easy"
+    },
+    {
+      "task_id": "topic_2",
+      "text": "The frigid temperatures and substantial snowfall created hazardous conditions.",
+      "canonical_text": "The cold temperatures and big snowfall made dangerous conditions.",
+      "label": "weather",
+      "difficulty": "medium"
+    }
+  ],
+  "semantic_similarity_tasks": [
+    {
+      "task_id": "sim_1",
+      "sentence1": "The enormous building dominated the skyline.",
+      "sentence2": "The huge structure towered over the city.",
+      "canonical_sentence1": "The big building dominated the skyline.",
+      "canonical_sentence2": "The big structure towered over the city.",
+      "similarity_score": 0.85,
+      "expected_cvc_improvement": "Higher consistency in embeddings"
+    },
+    {
+      "task_id": "sim_2",
+      "sentence1": "She felt joyful and elated.",
+      "sentence2": "She was happy and delighted.",
+      "canonical_sentence1": "She felt happy and happy.",
+      "canonical_sentence2": "She was happy and happy.",
+      "similarity_score": 0.92,
+      "expected_cvc_improvement": "Perfect synonym alignment"
+    },
+    {
+      "task_id": "sim_3",
+      "sentence1": "The intelligent scientist presented groundbreaking research.",
+      "sentence2": "The bright researcher displayed innovative findings.",
+      "canonical_sentence1": "The smart scientist showed groundbreaking research.",
+      "canonical_sentence2": "The smart researcher showed innovative findings.",
+      "similarity_score": 0.78,
+      "expected_cvc_improvement": "Stronger semantic overlap"
+    }
+  ],
+  "question_answering_tasks": [
+    {
+      "task_id": "qa_1",
+      "context": "The enormous library contained vast collections of ancient manuscripts. Numerous scholars visited to examine the rare documents.",
+      "canonical_context": "The big library had big collections of ancient manuscripts. Many scholars visited to look at the few documents.",
+      "question": "What did the library contain?",
+      "answer": "ancient manuscripts",
+      "difficulty": "easy"
+    },
+    {
+      "task_id": "qa_2",
+      "context": "The intelligent researcher utilized sophisticated equipment to analyze the complex samples. Her findings revealed significant patterns.",
+      "canonical_context": "The smart researcher used sophisticated equipment to look at the hard samples. Her findings showed important patterns.",
+      "question": "What did the researcher's findings reveal?",
+      "answer": "significant patterns",
+      "difficulty": "medium"
+    },
+    {
+      "task_id": "qa_3",
+      "context": "Despite the arduous journey through frigid conditions, the team successfully obtained the crucial samples they required for their groundbreaking study.",
+      "canonical_context": "Despite the hard journey through cold conditions, the team successfully got the important samples they needed for their groundbreaking study.",
+      "question": "What did the team obtain?",
+      "answer": "crucial samples",
+      "difficulty": "hard"
+    }
+  ],
+  "generation_quality_tasks": [
+    {
+      "task_id": "gen_1",
+      "prompt": "Describe a beautiful sunset using varied vocabulary.",
+      "expected_original_style": "Uses diverse adjectives like gorgeous, stunning, magnificent",
+      "expected_cvc_output": "May use repetitive 'beautiful' due to vocabulary compression",
+      "evaluation_criteria": [
+        "coherence",
+        "naturalness",
+        "lexical_diversity",
+        "semantic_accuracy"
+      ]
+    },
+    {
+      "task_id": "gen_2",
+      "prompt": "Write about someone feeling extremely happy.",
+      "expected_original_style": "Uses synonyms like elated, joyful, delighted, ecstatic",
+      "expected_cvc_output": "Primarily uses 'happy' with potential repetition",
+      "evaluation_criteria": [
+        "emotional_expression",
+        "variety",
+        "readability"
+      ]
+    },
+    {
+      "task_id": "gen_3",
+      "prompt": "Describe a large building in a city.",
+      "expected_original_style": "Uses enormous, massive, colossal, towering",
+      "expected_cvc_output": "Uses 'big' consistently",
+      "evaluation_criteria": [
+        "descriptive_power",
+        "monotony_vs_clarity",
+        "comprehension"
+      ]
+    }
+  ],
+  "robustness_tasks": [
+    {
+      "task_id": "robust_1",
+      "description": "Test model understanding with synonym variants",
+      "variants": [
+        "Show me large buildings",
+        "Show me huge buildings",
+        "Show me enormous buildings",
+        "Show me massive buildings",
+        "Show me big buildings"
+      ],
+      "canonical_form": "Show me big buildings",
+      "expected_behavior": "All variants should produce identical or highly similar responses",
+      "evaluation": "Measure response consistency across variants"
+    },
+    {
+      "task_id": "robust_2",
+      "description": "Test with emotion synonym variants",
+      "variants": [
+        "I am feeling joyful today",
+        "I am feeling happy today",
+        "I am feeling elated today",
+        "I am feeling delighted today",
+        "I am feeling cheerful today"
+      ],
+      "canonical_form": "I am feeling happy today",
+      "expected_behavior": "Consistent sentiment understanding",
+      "evaluation": "Measure semantic consistency in responses"
+    }
+  ],
+  "fine_tuning_efficiency_tasks": [
+    {
+      "task_id": "finetune_1",
+      "description": "Domain adaptation with limited data",
+      "domain": "medical",
+      "training_samples_original": 1000,
+      "training_samples_cvc": 1000,
+      "hypothesis": "CVC model requires fewer samples due to concentrated gradients",
+      "metrics": [
+        "convergence_speed",
+        "minimum_data_requirement",
+        "final_accuracy"
+      ]
+    },
+    {
+      "task_id": "finetune_2",
+      "description": "Specialized classification task",
+      "domain": "customer_service",
+      "training_samples_original": 500,
+      "training_samples_cvc": 500,
+      "hypothesis": "CVC model shows faster convergence and better gradient stability",
+      "metrics": [
+        "steps_to_convergence",
+        "gradient_variance",
+        "overfitting_resistance"
+      ]
+    }
+  ],
+  "expected_results": {
+    "classification": {
+      "hypothesis": "2-5% accuracy improvement",
+      "reasoning": "Reduced synonym confusion, concentrated training signal"
+    },
+    "semantic_similarity": {
+      "hypothesis": "3-7% improvement in similarity scoring",
+      "reasoning": "Unified embeddings for synonyms produce more consistent representations"
+    },
+    "question_answering": {
+      "hypothesis": "Maintained or improved accuracy with faster inference",
+      "reasoning": "Smaller vocabulary enables faster processing without comprehension loss"
+    },
+    "generation": {
+      "hypothesis": "Trade-off between consistency and diversity",
+      "reasoning": "More repetitive output but potentially clearer semantics"
+    },
+    "robustness": {
+      "hypothesis": "Perfect consistency across synonym variants",
+      "reasoning": "Input normalization ensures identical processing regardless of variant"
+    },
+    "fine_tuning": {
+      "hypothesis": "30-50% faster convergence, 20-30% less data needed",
+      "reasoning": "Gradient concentration on canonical forms accelerates adaptation"
+    }
+  }
+}

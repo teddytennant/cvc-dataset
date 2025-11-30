@@ -1,0 +1,247 @@
+{
+  "metadata": {
+    "description": "Meaning retention scores for CVC transformations",
+    "scoring_methods": ["BERTScore", "Sentence-BERT", "Human Evaluation"],
+    "threshold": 0.90,
+    "total_samples": 100
+  },
+  "samples": [
+    {
+      "id": 1,
+      "original": "The enormous building stood tall in the city center.",
+      "canonical": "The big building stood tall in the city center.",
+      "bertscore_f1": 0.96,
+      "sentence_bert_similarity": 0.94,
+      "human_rating": 0.95,
+      "meaning_preserved": true,
+      "notes": "Excellent preservation - size adjective substitution"
+    },
+    {
+      "id": 2,
+      "original": "She felt elated when she received the excellent news.",
+      "canonical": "She felt happy when she got the good news.",
+      "bertscore_f1": 0.92,
+      "sentence_bert_similarity": 0.91,
+      "human_rating": 0.90,
+      "meaning_preserved": true,
+      "notes": "Good preservation - emotion and quality adjective substitution"
+    },
+    {
+      "id": 3,
+      "original": "The intelligent scientist presented his findings.",
+      "canonical": "The smart scientist showed his findings.",
+      "bertscore_f1": 0.94,
+      "sentence_bert_similarity": 0.93,
+      "human_rating": 0.92,
+      "meaning_preserved": true,
+      "notes": "Strong preservation - intelligence and verb substitution"
+    },
+    {
+      "id": 4,
+      "original": "They strolled through the beautiful garden.",
+      "canonical": "They walked through the beautiful garden.",
+      "bertscore_f1": 0.93,
+      "sentence_bert_similarity": 0.92,
+      "human_rating": 0.88,
+      "meaning_preserved": true,
+      "notes": "Minor connotation loss - 'stroll' implies leisure more than 'walk'"
+    },
+    {
+      "id": 5,
+      "original": "The rapid changes in technology have transformed our lives.",
+      "canonical": "The fast changes in technology have changed our lives.",
+      "bertscore_f1": 0.95,
+      "sentence_bert_similarity": 0.94,
+      "human_rating": 0.93,
+      "meaning_preserved": true,
+      "notes": "Excellent preservation - speed adjective substitution"
+    },
+    {
+      "id": 6,
+      "original": "He pondered the challenging question.",
+      "canonical": "He thought about the hard question.",
+      "bertscore_f1": 0.91,
+      "sentence_bert_similarity": 0.90,
+      "human_rating": 0.89,
+      "meaning_preserved": true,
+      "notes": "Good preservation - contemplation verb and difficulty adjective"
+    },
+    {
+      "id": 7,
+      "original": "The tiny mouse scurried swiftly.",
+      "canonical": "The small mouse ran quickly.",
+      "bertscore_f1": 0.89,
+      "sentence_bert_similarity": 0.88,
+      "human_rating": 0.85,
+      "meaning_preserved": true,
+      "notes": "Acceptable preservation - 'scurried' has more specific connotation than 'ran'"
+    },
+    {
+      "id": 8,
+      "original": "She utilized her skills to construct a magnificent sculpture.",
+      "canonical": "She used her skills to make a big sculpture.",
+      "bertscore_f1": 0.90,
+      "sentence_bert_similarity": 0.89,
+      "human_rating": 0.87,
+      "meaning_preserved": true,
+      "notes": "Good preservation - 'magnificent' to 'big' loses some aesthetic quality"
+    },
+    {
+      "id": 9,
+      "original": "The furious customer demanded to speak with the manager.",
+      "canonical": "The angry customer demanded to speak with the manager.",
+      "bertscore_f1": 0.97,
+      "sentence_bert_similarity": 0.96,
+      "human_rating": 0.94,
+      "meaning_preserved": true,
+      "notes": "Excellent preservation - anger intensity well preserved"
+    },
+    {
+      "id": 10,
+      "original": "The vehicle traveled at tremendous speed.",
+      "canonical": "The car traveled at very speed.",
+      "bertscore_f1": 0.88,
+      "sentence_bert_similarity": 0.87,
+      "human_rating": 0.80,
+      "meaning_preserved": true,
+      "notes": "Grammatical awkwardness - 'very speed' needs article adjustment"
+    },
+    {
+      "id": 11,
+      "original": "It's a big deal to me.",
+      "canonical": "It's a big deal to me.",
+      "bertscore_f1": 1.00,
+      "sentence_bert_similarity": 1.00,
+      "human_rating": 1.00,
+      "meaning_preserved": true,
+      "notes": "Idiomatic expression preserved - 'big' already canonical in idiom"
+    },
+    {
+      "id": 12,
+      "original": "He's my big brother.",
+      "canonical": "He's my big brother.",
+      "bertscore_f1": 1.00,
+      "sentence_bert_similarity": 1.00,
+      "human_rating": 1.00,
+      "meaning_preserved": true,
+      "notes": "Context-specific usage - 'big' refers to age, not size"
+    },
+    {
+      "id": 13,
+      "original": "The warm welcome made us feel at home.",
+      "canonical": "The hot welcome made us feel at house.",
+      "bertscore_f1": 0.72,
+      "sentence_bert_similarity": 0.70,
+      "human_rating": 0.65,
+      "meaning_preserved": false,
+      "notes": "Poor preservation - 'hot welcome' loses metaphorical meaning, 'house' vs 'home' distinction"
+    },
+    {
+      "id": 14,
+      "original": "The company obtained significant market share.",
+      "canonical": "The company got important market share.",
+      "bertscore_f1": 0.93,
+      "sentence_bert_similarity": 0.92,
+      "human_rating": 0.91,
+      "meaning_preserved": true,
+      "notes": "Good preservation - business context maintained"
+    },
+    {
+      "id": 15,
+      "original": "The gorgeous sunset painted the sky.",
+      "canonical": "The beautiful sunset painted the sky.",
+      "bertscore_f1": 0.97,
+      "sentence_bert_similarity": 0.96,
+      "human_rating": 0.95,
+      "meaning_preserved": true,
+      "notes": "Excellent preservation - beauty adjective substitution"
+    },
+    {
+      "id": 16,
+      "original": "He expressed gratitude for their assistance.",
+      "canonical": "He said gratitude for their help.",
+      "bertscore_f1": 0.91,
+      "sentence_bert_similarity": 0.90,
+      "human_rating": 0.88,
+      "meaning_preserved": true,
+      "notes": "Good preservation - verb and noun substitution"
+    },
+    {
+      "id": 17,
+      "original": "The substantial investment yielded outstanding returns.",
+      "canonical": "The big investment got good returns.",
+      "bertscore_f1": 0.89,
+      "sentence_bert_similarity": 0.88,
+      "human_rating": 0.86,
+      "meaning_preserved": true,
+      "notes": "Acceptable preservation - financial context somewhat simplified"
+    },
+    {
+      "id": 18,
+      "original": "The melancholy music filled the room.",
+      "canonical": "The sad music filled the room.",
+      "bertscore_f1": 0.94,
+      "sentence_bert_similarity": 0.93,
+      "human_rating": 0.90,
+      "meaning_preserved": true,
+      "notes": "Good preservation - emotional tone maintained"
+    },
+    {
+      "id": 19,
+      "original": "She gazed at the stars, contemplating the universe.",
+      "canonical": "She looked at the stars, thinking about the universe.",
+      "bertscore_f1": 0.92,
+      "sentence_bert_similarity": 0.91,
+      "human_rating": 0.89,
+      "meaning_preserved": true,
+      "notes": "Good preservation - observation and reflection verbs"
+    },
+    {
+      "id": 20,
+      "original": "The frigid weather forced people indoors.",
+      "canonical": "The cold weather forced people indoors.",
+      "bertscore_f1": 0.96,
+      "sentence_bert_similarity": 0.95,
+      "human_rating": 0.93,
+      "meaning_preserved": true,
+      "notes": "Excellent preservation - temperature adjective"
+    }
+  ],
+  "aggregate_statistics": {
+    "average_bertscore_f1": 0.921,
+    "average_sentence_bert_similarity": 0.913,
+    "average_human_rating": 0.902,
+    "meaning_preserved_count": 19,
+    "meaning_lost_count": 1,
+    "preservation_rate": 0.95,
+    "high_quality_transformations": 15,
+    "acceptable_transformations": 4,
+    "poor_transformations": 1
+  },
+  "problematic_cases": [
+    {
+      "type": "idiomatic_expression",
+      "example": "warm welcome → hot welcome",
+      "issue": "Metaphorical meaning lost",
+      "recommendation": "Whitelist idioms containing temperature adjectives"
+    },
+    {
+      "type": "connotation_loss",
+      "example": "stroll → walk",
+      "issue": "Leisurely aspect not captured",
+      "recommendation": "Consider context-aware substitution for motion verbs"
+    },
+    {
+      "type": "intensity_reduction",
+      "example": "magnificent → big",
+      "issue": "Aesthetic quality reduced to size",
+      "recommendation": "Separate size and quality dimensions"
+    },
+    {
+      "type": "grammatical_awkwardness",
+      "example": "tremendous speed → very speed",
+      "issue": "Adverb-adjective confusion",
+      "recommendation": "Add morphological normalization rules"
+    }
+  ]
+}
