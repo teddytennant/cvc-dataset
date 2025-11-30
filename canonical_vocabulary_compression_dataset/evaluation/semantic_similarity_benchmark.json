@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "task": "semantic_similarity",
+    "description": "Sentence pair similarity benchmark for CVC evaluation",
+    "total_pairs": 60,
+    "similarity_range": "0.0 to 1.0"
+  },
+  "pairs": [
+    {
+      "id": 1,
+      "sentence1": "The enormous building dominated the skyline.",
+      "sentence2": "The massive structure towered over the city.",
+      "similarity": 0.85,
+      "category": "high_similarity"
+    },
+    {
+      "id": 2,
+      "sentence1": "She felt elated about the news.",
+      "sentence2": "She was jubilant regarding the announcement.",
+      "similarity": 0.90,
+      "category": "high_similarity"
+    },
+    {
+      "id": 3,
+      "sentence1": "The swift response prevented disaster.",
+      "sentence2": "The rapid action averted catastrophe.",
+      "similarity": 0.88,
+      "category": "high_similarity"
+    },
+    {
+      "id": 4,
+      "sentence1": "The brilliant scientist made discoveries.",
+      "sentence2": "The intelligent researcher found breakthroughs.",
+      "similarity": 0.82,
+      "category": "high_similarity"
+    },
+    {
+      "id": 5,
+      "sentence1": "The gorgeous sunset painted the sky.",
+      "sentence2": "The beautiful evening colored the horizon.",
+      "similarity": 0.79,
+      "category": "high_similarity"
+    },
+    {
+      "id": 6,
+      "sentence1": "They constructed an enormous facility.",
+      "sentence2": "They built a massive building.",
+      "similarity": 0.87,
+      "category": "high_similarity"
+    },
+    {
+      "id": 7,
+      "sentence1": "The arduous journey tested their endurance.",
+      "sentence2": "The challenging trek examined their stamina.",
+      "similarity": 0.84,
+      "category": "high_similarity"
+    },
+    {
+      "id": 8,
+      "sentence1": "She articulated her vision clearly.",
+      "sentence2": "She expressed her ideas plainly.",
+      "similarity": 0.83,
+      "category": "high_similarity"
+    },
+    {
+      "id": 9,
+      "sentence1": "The tiny apartment was cozy.",
+      "sentence2": "The small residence was comfortable.",
+      "similarity": 0.81,
+      "category": "high_similarity"
+    },
+    {
+      "id": 10,
+      "sentence1": "The excellent performance exceeded expectations.",
+      "sentence2": "The superb show surpassed predictions.",
+      "similarity": 0.86,
+      "category": "high_similarity"
+    },
+    {
+      "id": 11,
+      "sentence1": "The furious customer demanded answers.",
+      "sentence2": "The angry client required explanations.",
+      "similarity": 0.84,
+      "category": "high_similarity"
+    },
+    {
+      "id": 12,
+      "sentence1": "They strolled through the park.",
+      "sentence2": "They walked in the garden.",
+      "similarity": 0.75,
+      "category": "moderate_similarity"
+    },
+    {
+      "id": 13,
+      "sentence1": "The crucial decision affected everyone.",
+      "sentence2": "The important choice impacted all people.",
+      "similarity": 0.88,
+      "category": "high_similarity"
+    },
+    {
+      "id": 14,
+      "sentence1": "She gazed at the stars thoughtfully.",
+      "sentence2": "She looked at the night sky contemplatively.",
+      "similarity": 0.82,
+      "category": "high_similarity"
+    },
+    {
+      "id": 15,
+      "sentence1": "The sluggish economy worried investors.",
+      "sentence2": "The slow market concerned shareholders.",
+      "similarity": 0.83,
+      "category": "high_similarity"
+    },
+    {
+      "id": 16,
+      "sentence1": "The substantial investment yielded returns.",
+      "sentence2": "The large capital produced profits.",
+      "similarity": 0.80,
+      "category": "high_similarity"
+    },
+    {
+      "id": 17,
+      "sentence1": "They procured essential materials.",
+      "sentence2": "They obtained necessary supplies.",
+      "similarity": 0.89,
+      "category": "high_similarity"
+    },
+    {
+      "id": 18,
+      "sentence1": "The melancholy music touched hearts.",
+      "sentence2": "The sad melody moved emotions.",
+      "similarity": 0.81,
+      "category": "high_similarity"
+    },
+    {
+      "id": 19,
+      "sentence1": "She fabricated the components carefully.",
+      "sentence2": "She manufactured the parts precisely.",
+      "similarity": 0.85,
+      "category": "high_similarity"
+    },
+    {
+      "id": 20,
+      "sentence1": "The frigid weather delayed operations.",
+      "sentence2": "The cold climate postponed activities.",
+      "similarity": 0.78,
+      "category": "moderate_similarity"
+    },
+    {
+      "id": 21,
+      "sentence1": "He sprinted to catch the train.",
+      "sentence2": "He ran quickly to board the transport.",
+      "similarity": 0.82,
+      "category": "high_similarity"
+    },
+    {
+      "id": 22,
+      "sentence1": "The astute analyst predicted trends.",
+      "sentence2": "The clever expert forecasted patterns.",
+      "similarity": 0.83,
+      "category": "high_similarity"
+    },
+    {
+      "id": 23,
+      "sentence1": "Numerous people attended the event.",
+      "sentence2": "Many individuals came to the gathering.",
+      "similarity": 0.87,
+      "category": "high_similarity"
+    },
+    {
+      "id": 24,
+      "sentence1": "The dreadful accident caused damage.",
+      "sentence2": "The terrible crash created destruction.",
+      "similarity": 0.86,
+      "category": "high_similarity"
+    },
+    {
+      "id": 25,
+      "sentence1": "She exhibited remarkable talent.",
+      "sentence2": "She displayed exceptional ability.",
+      "similarity": 0.88,
+      "category": "high_similarity"
+    },
+    {
+      "id": 26,
+      "sentence1": "The company is hiring staff.",
+      "sentence2": "The cat sleeps on the mat.",
+      "similarity": 0.05,
+      "category": "no_similarity"
+    },
+    {
+      "id": 27,
+      "sentence1": "The vast ocean stretched endlessly.",
+      "sentence2": "The expansive sea extended infinitely.",
+      "similarity": 0.91,
+      "category": "high_similarity"
+    },
+    {
+      "id": 28,
+      "sentence1": "They facilitated communication effectively.",
+      "sentence2": "They enabled interaction successfully.",
+      "similarity": 0.84,
+      "category": "high_similarity"
+    },
+    {
+      "id": 29,
+      "sentence1": "The straightforward solution worked well.",
+      "sentence2": "The simple approach functioned effectively.",
+      "similarity": 0.86,
+      "category": "high_similarity"
+    },
+    {
+      "id": 30,
+      "sentence1": "The weather is sunny today.",
+      "sentence2": "The database needs maintenance.",
+      "similarity": 0.03,
+      "category": "no_similarity"
+    },
+    {
+      "id": 31,
+      "sentence1": "She contemplated the complex problem.",
+      "sentence2": "She considered the difficult issue.",
+      "similarity": 0.87,
+      "category": "high_similarity"
+    },
+    {
+      "id": 32,
+      "sentence1": "The colossal statue was impressive.",
+      "sentence2": "The huge monument was striking.",
+      "similarity": 0.84,
+      "category": "high_similarity"
+    },
+    {
+      "id": 33,
+      "sentence1": "He declared his intentions publicly.",
+      "sentence2": "He announced his plans openly.",
+      "similarity": 0.89,
+      "category": "high_similarity"
+    },
+    {
+      "id": 34,
+      "sentence1": "The elegant design impressed clients.",
+      "sentence2": "The refined style pleased customers.",
+      "similarity": 0.82,
+      "category": "high_similarity"
+    },
+    {
+      "id": 35,
+      "sentence1": "They discovered vital information.",
+      "sentence2": "They found crucial data.",
+      "similarity": 0.90,
+      "category": "high_similarity"
+    },
+    {
+      "id": 36,
+      "sentence1": "The project started yesterday.",
+      "sentence2": "Water boils at 100 degrees.",
+      "similarity": 0.02,
+      "category": "no_similarity"
+    },
+    {
+      "id": 37,
+      "sentence1": "The miniature model was detailed.",
+      "sentence2": "The tiny replica was intricate.",
+      "similarity": 0.85,
+      "category": "high_similarity"
+    },
+    {
+      "id": 38,
+      "sentence1": "She obtained exceptional results.",
+      "sentence2": "She achieved outstanding outcomes.",
+      "similarity": 0.91,
+      "category": "high_similarity"
+    },
+    {
+      "id": 39,
+      "sentence1": "The challenging task required effort.",
+      "sentence2": "The difficult work needed dedication.",
+      "similarity": 0.83,
+      "category": "high_similarity"
+    },
+    {
+      "id": 40,
+      "sentence1": "He observed the experiment carefully.",
+      "sentence2": "He watched the test attentively.",
+      "similarity": 0.87,
+      "category": "high_similarity"
+    },
+    {
+      "id": 41,
+      "sentence1": "The inferior product failed quickly.",
+      "sentence2": "The poor item broke rapidly.",
+      "similarity": 0.84,
+      "category": "high_similarity"
+    },
+    {
+      "id": 42,
+      "sentence1": "They ambled through the gardens.",
+      "sentence2": "They wandered in the green spaces.",
+      "similarity": 0.78,
+      "category": "moderate_similarity"
+    },
+    {
+      "id": 43,
+      "sentence1": "The paramount concern was safety.",
+      "sentence2": "The primary worry was security.",
+      "similarity": 0.86,
+      "category": "high_similarity"
+    },
+    {
+      "id": 44,
+      "sentence1": "She utilized advanced techniques.",
+      "sentence2": "She employed sophisticated methods.",
+      "similarity": 0.88,
+      "category": "high_similarity"
+    },
+    {
+      "id": 45,
+      "sentence1": "The moon orbits Earth.",
+      "sentence2": "The recipe calls for flour.",
+      "similarity": 0.01,
+      "category": "no_similarity"
+    },
+    {
+      "id": 46,
+      "sentence1": "The tremendous effort paid off.",
+      "sentence2": "The great work yielded results.",
+      "similarity": 0.82,
+      "category": "high_similarity"
+    },
+    {
+      "id": 47,
+      "sentence1": "He peered through the window.",
+      "sentence2": "He looked through the glass.",
+      "similarity": 0.85,
+      "category": "high_similarity"
+    },
+    {
+      "id": 48,
+      "sentence1": "The jubilant crowd celebrated victory.",
+      "sentence2": "The happy people rejoiced in success.",
+      "similarity": 0.86,
+      "category": "high_similarity"
+    },
+    {
+      "id": 49,
+      "sentence1": "She bestowed awards on winners.",
+      "sentence2": "She gave prizes to champions.",
+      "similarity": 0.87,
+      "category": "high_similarity"
+    },
+    {
+      "id": 50,
+      "sentence1": "The scorching heat was unbearable.",
+      "sentence2": "The extreme warmth was intolerable.",
+      "similarity": 0.84,
+      "category": "high_similarity"
+    }
+  ]
+}

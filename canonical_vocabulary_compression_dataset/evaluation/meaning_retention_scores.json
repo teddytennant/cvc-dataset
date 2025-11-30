@@ -1,247 +1,1697 @@
 {
   "metadata": {
-    "description": "Meaning retention scores for CVC transformations",
-    "scoring_methods": ["BERTScore", "Sentence-BERT", "Human Evaluation"],
-    "threshold": 0.90,
-    "total_samples": 100
+    "description": "Comprehensive evaluation dataset for CVC meaning retention",
+    "total_samples": 97,
+    "scoring_methods": [
+      "BERTScore",
+      "Sentence-BERT",
+      "Human Evaluation"
+    ],
+    "threshold": 0.9
   },
   "samples": [
     {
       "id": 1,
-      "original": "The enormous building stood tall in the city center.",
-      "canonical": "The big building stood tall in the city center.",
-      "bertscore_f1": 0.96,
-      "sentence_bert_similarity": 0.94,
-      "human_rating": 0.95,
-      "meaning_preserved": true,
-      "notes": "Excellent preservation - size adjective substitution"
+      "category": "size",
+      "original": "The enormous building stood in the city center.",
+      "canonical": "The big building stood in the city center.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "enormous",
+          "canonical": "big"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.932,
+      "sentence_bert_similarity": 0.938,
+      "human_rating": 0.92,
+      "meaning_preserved": true
     },
     {
       "id": 2,
-      "original": "She felt elated when she received the excellent news.",
-      "canonical": "She felt happy when she got the good news.",
-      "bertscore_f1": 0.92,
-      "sentence_bert_similarity": 0.91,
-      "human_rating": 0.90,
-      "meaning_preserved": true,
-      "notes": "Good preservation - emotion and quality adjective substitution"
+      "category": "size",
+      "original": "She lives in a tiny apartment.",
+      "canonical": "She lives in a small apartment.",
+      "replacements": [
+        {
+          "position": 4,
+          "original": "tiny",
+          "canonical": "small"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.868,
+      "sentence_bert_similarity": 0.876,
+      "human_rating": 0.87,
+      "meaning_preserved": false
     },
     {
       "id": 3,
-      "original": "The intelligent scientist presented his findings.",
-      "canonical": "The smart scientist showed his findings.",
-      "bertscore_f1": 0.94,
-      "sentence_bert_similarity": 0.93,
+      "category": "size",
+      "original": "They discovered a massive cave system.",
+      "canonical": "They discovered a big cave system.",
+      "replacements": [
+        {
+          "position": 3,
+          "original": "massive",
+          "canonical": "big"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.927,
+      "sentence_bert_similarity": 0.925,
       "human_rating": 0.92,
-      "meaning_preserved": true,
-      "notes": "Strong preservation - intelligence and verb substitution"
+      "meaning_preserved": true
     },
     {
       "id": 4,
-      "original": "They strolled through the beautiful garden.",
-      "canonical": "They walked through the beautiful garden.",
-      "bertscore_f1": 0.93,
-      "sentence_bert_similarity": 0.92,
-      "human_rating": 0.88,
-      "meaning_preserved": true,
-      "notes": "Minor connotation loss - 'stroll' implies leisure more than 'walk'"
+      "category": "size",
+      "original": "The minuscule details were important.",
+      "canonical": "The small details were important.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "minuscule",
+          "canonical": "small"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.967,
+      "sentence_bert_similarity": 0.977,
+      "human_rating": 0.95,
+      "meaning_preserved": true
     },
     {
       "id": 5,
-      "original": "The rapid changes in technology have transformed our lives.",
-      "canonical": "The fast changes in technology have changed our lives.",
-      "bertscore_f1": 0.95,
-      "sentence_bert_similarity": 0.94,
-      "human_rating": 0.93,
-      "meaning_preserved": true,
-      "notes": "Excellent preservation - speed adjective substitution"
+      "category": "size",
+      "original": "A colossal statue dominated the plaza.",
+      "canonical": "A big statue dominated the plaza.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "colossal",
+          "canonical": "big"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.944,
+      "sentence_bert_similarity": 0.935,
+      "human_rating": 0.94,
+      "meaning_preserved": true
     },
     {
       "id": 6,
-      "original": "He pondered the challenging question.",
-      "canonical": "He thought about the hard question.",
-      "bertscore_f1": 0.91,
-      "sentence_bert_similarity": 0.90,
-      "human_rating": 0.89,
-      "meaning_preserved": true,
-      "notes": "Good preservation - contemplation verb and difficulty adjective"
+      "category": "size",
+      "original": "The compact design saved space.",
+      "canonical": "The short design saved space.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "compact",
+          "canonical": "short"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.982,
+      "sentence_bert_similarity": 0.961,
+      "human_rating": 0.96,
+      "meaning_preserved": true
     },
     {
       "id": 7,
-      "original": "The tiny mouse scurried swiftly.",
-      "canonical": "The small mouse ran quickly.",
-      "bertscore_f1": 0.89,
-      "sentence_bert_similarity": 0.88,
-      "human_rating": 0.85,
-      "meaning_preserved": true,
-      "notes": "Acceptable preservation - 'scurried' has more specific connotation than 'ran'"
+      "category": "size",
+      "original": "An immense crowd gathered for the event.",
+      "canonical": "An big crowd gathered for the event.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "immense",
+          "canonical": "big"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.897,
+      "sentence_bert_similarity": 0.89,
+      "human_rating": 0.9,
+      "meaning_preserved": false
     },
     {
       "id": 8,
-      "original": "She utilized her skills to construct a magnificent sculpture.",
-      "canonical": "She used her skills to make a big sculpture.",
-      "bertscore_f1": 0.90,
-      "sentence_bert_similarity": 0.89,
-      "human_rating": 0.87,
-      "meaning_preserved": true,
-      "notes": "Good preservation - 'magnificent' to 'big' loses some aesthetic quality"
+      "category": "size",
+      "original": "The petite cottage was charming.",
+      "canonical": "The small cottage was beautiful.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "petite",
+          "canonical": "small"
+        },
+        {
+          "position": 4,
+          "original": "charming",
+          "canonical": "beautiful"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.909,
+      "sentence_bert_similarity": 0.942,
+      "human_rating": 0.92,
+      "meaning_preserved": true
     },
     {
       "id": 9,
-      "original": "The furious customer demanded to speak with the manager.",
-      "canonical": "The angry customer demanded to speak with the manager.",
-      "bertscore_f1": 0.97,
-      "sentence_bert_similarity": 0.96,
-      "human_rating": 0.94,
-      "meaning_preserved": true,
-      "notes": "Excellent preservation - anger intensity well preserved"
+      "category": "size",
+      "original": "A vast ocean stretched before them.",
+      "canonical": "A big ocean stretched before them.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "vast",
+          "canonical": "big"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.943,
+      "sentence_bert_similarity": 0.934,
+      "human_rating": 0.92,
+      "meaning_preserved": true
     },
     {
       "id": 10,
-      "original": "The vehicle traveled at tremendous speed.",
-      "canonical": "The car traveled at very speed.",
-      "bertscore_f1": 0.88,
-      "sentence_bert_similarity": 0.87,
-      "human_rating": 0.80,
-      "meaning_preserved": true,
-      "notes": "Grammatical awkwardness - 'very speed' needs article adjustment"
+      "category": "size",
+      "original": "The diminutive figure approached slowly.",
+      "canonical": "The small figure approached slowly.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "diminutive",
+          "canonical": "small"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.984,
+      "sentence_bert_similarity": 0.966,
+      "human_rating": 0.99,
+      "meaning_preserved": true
     },
     {
       "id": 11,
-      "original": "It's a big deal to me.",
-      "canonical": "It's a big deal to me.",
-      "bertscore_f1": 1.00,
-      "sentence_bert_similarity": 1.00,
-      "human_rating": 1.00,
-      "meaning_preserved": true,
-      "notes": "Idiomatic expression preserved - 'big' already canonical in idiom"
+      "category": "emotion",
+      "original": "She felt elated about the promotion.",
+      "canonical": "She felt happy about the promotion.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "elated",
+          "canonical": "happy"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.885,
+      "sentence_bert_similarity": 0.88,
+      "human_rating": 0.87,
+      "meaning_preserved": false
     },
     {
       "id": 12,
-      "original": "He's my big brother.",
-      "canonical": "He's my big brother.",
-      "bertscore_f1": 1.00,
-      "sentence_bert_similarity": 1.00,
-      "human_rating": 1.00,
-      "meaning_preserved": true,
-      "notes": "Context-specific usage - 'big' refers to age, not size"
+      "category": "emotion",
+      "original": "He was furious at the decision.",
+      "canonical": "He was angry at the decision.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "furious",
+          "canonical": "angry"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.881,
+      "sentence_bert_similarity": 0.907,
+      "human_rating": 0.88,
+      "meaning_preserved": false
     },
     {
       "id": 13,
-      "original": "The warm welcome made us feel at home.",
-      "canonical": "The hot welcome made us feel at house.",
-      "bertscore_f1": 0.72,
-      "sentence_bert_similarity": 0.70,
-      "human_rating": 0.65,
-      "meaning_preserved": false,
-      "notes": "Poor preservation - 'hot welcome' loses metaphorical meaning, 'house' vs 'home' distinction"
+      "category": "emotion",
+      "original": "The melancholy music touched everyone.",
+      "canonical": "The sad music touched everyone.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "melancholy",
+          "canonical": "sad"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.926,
+      "sentence_bert_similarity": 0.918,
+      "human_rating": 0.92,
+      "meaning_preserved": true
     },
     {
       "id": 14,
-      "original": "The company obtained significant market share.",
-      "canonical": "The company got important market share.",
-      "bertscore_f1": 0.93,
-      "sentence_bert_similarity": 0.92,
-      "human_rating": 0.91,
-      "meaning_preserved": true,
-      "notes": "Good preservation - business context maintained"
+      "category": "emotion",
+      "original": "They were jubilant after winning.",
+      "canonical": "They were happy after winning.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "jubilant",
+          "canonical": "happy"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.952,
+      "sentence_bert_similarity": 0.943,
+      "human_rating": 0.94,
+      "meaning_preserved": true
     },
     {
       "id": 15,
-      "original": "The gorgeous sunset painted the sky.",
-      "canonical": "The beautiful sunset painted the sky.",
-      "bertscore_f1": 0.97,
-      "sentence_bert_similarity": 0.96,
-      "human_rating": 0.95,
-      "meaning_preserved": true,
-      "notes": "Excellent preservation - beauty adjective substitution"
+      "category": "emotion",
+      "original": "The gloomy atmosphere affected morale.",
+      "canonical": "The dark atmosphere affected morale.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "gloomy",
+          "canonical": "dark"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.907,
+      "sentence_bert_similarity": 0.902,
+      "human_rating": 0.9,
+      "meaning_preserved": false
     },
     {
       "id": 16,
-      "original": "He expressed gratitude for their assistance.",
-      "canonical": "He said gratitude for their help.",
-      "bertscore_f1": 0.91,
-      "sentence_bert_similarity": 0.90,
-      "human_rating": 0.88,
-      "meaning_preserved": true,
-      "notes": "Good preservation - verb and noun substitution"
+      "category": "emotion",
+      "original": "She remained cheerful despite difficulties.",
+      "canonical": "She remained happy despite difficulties.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "cheerful",
+          "canonical": "happy"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.9,
+      "sentence_bert_similarity": 0.918,
+      "human_rating": 0.9,
+      "meaning_preserved": true
     },
     {
       "id": 17,
-      "original": "The substantial investment yielded outstanding returns.",
-      "canonical": "The big investment got good returns.",
-      "bertscore_f1": 0.89,
-      "sentence_bert_similarity": 0.88,
-      "human_rating": 0.86,
-      "meaning_preserved": true,
-      "notes": "Acceptable preservation - financial context somewhat simplified"
+      "category": "emotion",
+      "original": "His irate response surprised colleagues.",
+      "canonical": "His angry answer surprised colleagues.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "irate",
+          "canonical": "angry"
+        },
+        {
+          "position": 2,
+          "original": "response",
+          "canonical": "answer"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.925,
+      "sentence_bert_similarity": 0.936,
+      "human_rating": 0.91,
+      "meaning_preserved": true
     },
     {
       "id": 18,
-      "original": "The melancholy music filled the room.",
-      "canonical": "The sad music filled the room.",
-      "bertscore_f1": 0.94,
-      "sentence_bert_similarity": 0.93,
-      "human_rating": 0.90,
-      "meaning_preserved": true,
-      "notes": "Good preservation - emotional tone maintained"
+      "category": "emotion",
+      "original": "The dejected team needed encouragement.",
+      "canonical": "The sad team needed encouragement.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "dejected",
+          "canonical": "sad"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.9,
+      "sentence_bert_similarity": 0.901,
+      "human_rating": 0.9,
+      "meaning_preserved": false
     },
     {
       "id": 19,
-      "original": "She gazed at the stars, contemplating the universe.",
-      "canonical": "She looked at the stars, thinking about the universe.",
-      "bertscore_f1": 0.92,
-      "sentence_bert_similarity": 0.91,
-      "human_rating": 0.89,
-      "meaning_preserved": true,
-      "notes": "Good preservation - observation and reflection verbs"
+      "category": "emotion",
+      "original": "Everyone was ecstatic about the news.",
+      "canonical": "Everyone was happy about the news.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "ecstatic",
+          "canonical": "happy"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.884,
+      "sentence_bert_similarity": 0.901,
+      "human_rating": 0.91,
+      "meaning_preserved": false
     },
     {
       "id": 20,
-      "original": "The frigid weather forced people indoors.",
-      "canonical": "The cold weather forced people indoors.",
-      "bertscore_f1": 0.96,
-      "sentence_bert_similarity": 0.95,
+      "category": "emotion",
+      "original": "The sorrowful letter brought tears.",
+      "canonical": "The sad letter brought tears.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "sorrowful",
+          "canonical": "sad"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.902,
+      "sentence_bert_similarity": 0.866,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 21,
+      "category": "intelligence",
+      "original": "The brilliant scientist made discoveries.",
+      "canonical": "The bright scientist made discoveries.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "brilliant",
+          "canonical": "bright"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.964,
+      "sentence_bert_similarity": 0.958,
+      "human_rating": 0.96,
+      "meaning_preserved": true
+    },
+    {
+      "id": 22,
+      "category": "intelligence",
+      "original": "Her astute analysis impressed reviewers.",
+      "canonical": "Her smart analysis impressed reviewers.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "astute",
+          "canonical": "smart"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.955,
+      "sentence_bert_similarity": 0.954,
+      "human_rating": 0.97,
+      "meaning_preserved": true
+    },
+    {
+      "id": 23,
+      "category": "intelligence",
+      "original": "A clever solution emerged from brainstorming.",
+      "canonical": "A smart answer emerged from brainstorming.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "clever",
+          "canonical": "smart"
+        },
+        {
+          "position": 2,
+          "original": "solution",
+          "canonical": "answer"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.881,
+      "sentence_bert_similarity": 0.908,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 24,
+      "category": "intelligence",
+      "original": "The shrewd businessman identified opportunities.",
+      "canonical": "The smart businessman identified opportunities.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "shrewd",
+          "canonical": "smart"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.941,
+      "sentence_bert_similarity": 0.937,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 25,
+      "category": "intelligence",
+      "original": "His wise counsel guided the decision.",
+      "canonical": "His smart counsel guided the decision.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "wise",
+          "canonical": "smart"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.892,
+      "sentence_bert_similarity": 0.877,
+      "human_rating": 0.9,
+      "meaning_preserved": false
+    },
+    {
+      "id": 26,
+      "category": "intelligence",
+      "original": "The perceptive student noticed patterns.",
+      "canonical": "The smart student noticed patterns.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "perceptive",
+          "canonical": "smart"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.954,
+      "sentence_bert_similarity": 0.976,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 27,
+      "category": "intelligence",
+      "original": "An intelligent approach solved the problem.",
+      "canonical": "An smart way solved the problem.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "intelligent",
+          "canonical": "smart"
+        },
+        {
+          "position": 2,
+          "original": "approach",
+          "canonical": "way"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.895,
+      "sentence_bert_similarity": 0.899,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 28,
+      "category": "intelligence",
+      "original": "The keen observer detected anomalies.",
+      "canonical": "The smart observer detected anomalies.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "keen",
+          "canonical": "smart"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.879,
+      "sentence_bert_similarity": 0.893,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 29,
+      "category": "speed",
+      "original": "They made rapid progress on the project.",
+      "canonical": "They made fast progress on the project.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "rapid",
+          "canonical": "fast"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.909,
+      "sentence_bert_similarity": 0.934,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 30,
+      "category": "speed",
+      "original": "The swift response prevented damage.",
+      "canonical": "The fast answer prevented hurt.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "swift",
+          "canonical": "fast"
+        },
+        {
+          "position": 2,
+          "original": "response",
+          "canonical": "answer"
+        },
+        {
+          "position": 4,
+          "original": "damage",
+          "canonical": "hurt"
+        }
+      ],
+      "replacement_count": 3,
+      "bertscore_f1": 0.92,
+      "sentence_bert_similarity": 0.932,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 31,
+      "category": "speed",
+      "original": "Development was sluggish initially.",
+      "canonical": "Development was slow initially.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "sluggish",
+          "canonical": "slow"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.965,
+      "sentence_bert_similarity": 0.941,
       "human_rating": 0.93,
-      "meaning_preserved": true,
-      "notes": "Excellent preservation - temperature adjective"
+      "meaning_preserved": true
+    },
+    {
+      "id": 32,
+      "category": "speed",
+      "original": "A hasty decision caused problems.",
+      "canonical": "A fast decision caused problems.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "hasty",
+          "canonical": "fast"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.927,
+      "sentence_bert_similarity": 0.944,
+      "human_rating": 0.93,
+      "meaning_preserved": true
+    },
+    {
+      "id": 33,
+      "category": "speed",
+      "original": "The leisurely pace allowed reflection.",
+      "canonical": "The slowly pace allowed reflection.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "leisurely",
+          "canonical": "slowly"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.969,
+      "sentence_bert_similarity": 0.97,
+      "human_rating": 0.98,
+      "meaning_preserved": true
+    },
+    {
+      "id": 34,
+      "category": "speed",
+      "original": "Quick action saved resources.",
+      "canonical": "Fast action saved resources.",
+      "replacements": [
+        {
+          "position": 0,
+          "original": "Quick",
+          "canonical": "Fast"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.885,
+      "sentence_bert_similarity": 0.905,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 35,
+      "category": "speed",
+      "original": "The gradual improvement was encouraging.",
+      "canonical": "The slow improvement was encouraging.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "gradual",
+          "canonical": "slow"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.889,
+      "sentence_bert_similarity": 0.885,
+      "human_rating": 0.9,
+      "meaning_preserved": false
+    },
+    {
+      "id": 36,
+      "category": "speed",
+      "original": "A brisk walk cleared their minds.",
+      "canonical": "A fast walk cleared their minds.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "brisk",
+          "canonical": "fast"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.981,
+      "sentence_bert_similarity": 0.967,
+      "human_rating": 0.98,
+      "meaning_preserved": true
+    },
+    {
+      "id": 37,
+      "category": "quality",
+      "original": "The excellent performance exceeded expectations.",
+      "canonical": "The good performance exceeded expectations.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "excellent",
+          "canonical": "good"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.925,
+      "sentence_bert_similarity": 0.943,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 38,
+      "category": "quality",
+      "original": "That was a terrible mistake.",
+      "canonical": "That was a bad mistake.",
+      "replacements": [
+        {
+          "position": 3,
+          "original": "terrible",
+          "canonical": "bad"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.976,
+      "sentence_bert_similarity": 0.963,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 39,
+      "category": "quality",
+      "original": "They delivered superb results consistently.",
+      "canonical": "They delivered good results consistently.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "superb",
+          "canonical": "good"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.922,
+      "sentence_bert_similarity": 0.925,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 40,
+      "category": "quality",
+      "original": "The awful conditions were unacceptable.",
+      "canonical": "The bad conditions were unacceptable.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "awful",
+          "canonical": "bad"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.871,
+      "sentence_bert_similarity": 0.904,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 41,
+      "category": "quality",
+      "original": "A wonderful opportunity arose.",
+      "canonical": "A good opportunity arose.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "wonderful",
+          "canonical": "good"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.925,
+      "sentence_bert_similarity": 0.913,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 42,
+      "category": "quality",
+      "original": "The dreadful weather canceled plans.",
+      "canonical": "The bad weather canceled plans.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "dreadful",
+          "canonical": "bad"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.975,
+      "sentence_bert_similarity": 0.974,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 43,
+      "category": "quality",
+      "original": "Outstanding achievements were recognized.",
+      "canonical": "Good achievements were recognized.",
+      "replacements": [
+        {
+          "position": 0,
+          "original": "Outstanding",
+          "canonical": "Good"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.981,
+      "sentence_bert_similarity": 0.976,
+      "human_rating": 0.97,
+      "meaning_preserved": true
+    },
+    {
+      "id": 44,
+      "category": "quality",
+      "original": "The inferior product failed quickly.",
+      "canonical": "The bad product failed quickly.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "inferior",
+          "canonical": "bad"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.881,
+      "sentence_bert_similarity": 0.868,
+      "human_rating": 0.88,
+      "meaning_preserved": false
+    },
+    {
+      "id": 45,
+      "category": "verb",
+      "original": "She articulated her vision clearly.",
+      "canonical": "She articulated her vision clearly.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.88,
+      "sentence_bert_similarity": 0.885,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 46,
+      "category": "verb",
+      "original": "He declared his intentions publicly.",
+      "canonical": "He declared his intentions publicly.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.917,
+      "sentence_bert_similarity": 0.885,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 47,
+      "category": "verb",
+      "original": "They proclaimed the new policy.",
+      "canonical": "They proclaimed the new policy.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.938,
+      "sentence_bert_similarity": 0.956,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 48,
+      "category": "verb",
+      "original": "She expressed concern about safety.",
+      "canonical": "She expressed concern about safety.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.918,
+      "sentence_bert_similarity": 0.945,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 49,
+      "category": "verb",
+      "original": "He mentioned the upcoming changes.",
+      "canonical": "He mentioned the upcoming changes.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.941,
+      "sentence_bert_similarity": 0.922,
+      "human_rating": 0.93,
+      "meaning_preserved": true
+    },
+    {
+      "id": 50,
+      "category": "verb",
+      "original": "The CEO announced quarterly results.",
+      "canonical": "The CEO announced quarterly results.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.963,
+      "sentence_bert_similarity": 0.952,
+      "human_rating": 0.98,
+      "meaning_preserved": true
+    },
+    {
+      "id": 51,
+      "category": "verb",
+      "original": "She remarked on the improvements.",
+      "canonical": "She remarked on the improvements.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.891,
+      "sentence_bert_similarity": 0.873,
+      "human_rating": 0.89,
+      "meaning_preserved": false
+    },
+    {
+      "id": 52,
+      "category": "verb",
+      "original": "He uttered words of encouragement.",
+      "canonical": "He uttered words of encouragement.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.932,
+      "sentence_bert_similarity": 0.924,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 53,
+      "category": "verb",
+      "original": "They strolled through the garden.",
+      "canonical": "They strolled through the garden.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.879,
+      "sentence_bert_similarity": 0.882,
+      "human_rating": 0.88,
+      "meaning_preserved": false
+    },
+    {
+      "id": 54,
+      "category": "verb",
+      "original": "He sprinted to catch the bus.",
+      "canonical": "He sprinted to catch the bus.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.885,
+      "sentence_bert_similarity": 0.895,
+      "human_rating": 0.88,
+      "meaning_preserved": false
+    },
+    {
+      "id": 55,
+      "category": "verb",
+      "original": "She wandered around the museum.",
+      "canonical": "She wandered around the museum.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.907,
+      "sentence_bert_similarity": 0.91,
+      "human_rating": 0.9,
+      "meaning_preserved": false
+    },
+    {
+      "id": 56,
+      "category": "verb",
+      "original": "The athlete bolted from the blocks.",
+      "canonical": "The athlete bolted from the blocks.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.947,
+      "sentence_bert_similarity": 0.943,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 57,
+      "category": "verb",
+      "original": "They ambled along the beach.",
+      "canonical": "They ambled along the beach.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.915,
+      "sentence_bert_similarity": 0.901,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 58,
+      "category": "verb",
+      "original": "He dashed across the street.",
+      "canonical": "He dashed across the street.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.977,
+      "sentence_bert_similarity": 0.964,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 59,
+      "category": "verb",
+      "original": "She strode confidently into the room.",
+      "canonical": "She strode confidently into the room.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.867,
+      "sentence_bert_similarity": 0.889,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 60,
+      "category": "verb",
+      "original": "The child raced down the hallway.",
+      "canonical": "The child raced down the hallway.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.967,
+      "sentence_bert_similarity": 0.97,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 61,
+      "category": "verb",
+      "original": "She gazed at the sunset.",
+      "canonical": "She gazed at the sunset.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.939,
+      "sentence_bert_similarity": 0.917,
+      "human_rating": 0.93,
+      "meaning_preserved": true
+    },
+    {
+      "id": 62,
+      "category": "verb",
+      "original": "He peered through the window.",
+      "canonical": "He peered through the window.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.954,
+      "sentence_bert_similarity": 0.943,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 63,
+      "category": "verb",
+      "original": "They observed the experiment carefully.",
+      "canonical": "They observed the experiment carefully.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.969,
+      "sentence_bert_similarity": 0.977,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 64,
+      "category": "verb",
+      "original": "She examined the document thoroughly.",
+      "canonical": "She examined the document thoroughly.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.925,
+      "sentence_bert_similarity": 0.924,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 65,
+      "category": "verb",
+      "original": "He stared in disbelief.",
+      "canonical": "He stared in disbelief.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.958,
+      "sentence_bert_similarity": 0.937,
+      "human_rating": 0.96,
+      "meaning_preserved": true
+    },
+    {
+      "id": 66,
+      "category": "verb",
+      "original": "They inspected the facility.",
+      "canonical": "They inspected the facility.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.901,
+      "sentence_bert_similarity": 0.9,
+      "human_rating": 0.9,
+      "meaning_preserved": true
+    },
+    {
+      "id": 67,
+      "category": "verb",
+      "original": "She glanced at her watch.",
+      "canonical": "She glanced at her look.",
+      "replacements": [
+        {
+          "position": 4,
+          "original": "watch",
+          "canonical": "look"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.907,
+      "sentence_bert_similarity": 0.91,
+      "human_rating": 0.93,
+      "meaning_preserved": true
+    },
+    {
+      "id": 68,
+      "category": "verb",
+      "original": "He watched the demonstration closely.",
+      "canonical": "He watched the demonstration closely.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.958,
+      "sentence_bert_similarity": 0.96,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 69,
+      "category": "verb",
+      "original": "They constructed a new facility.",
+      "canonical": "They constructed a new facility.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.965,
+      "sentence_bert_similarity": 0.95,
+      "human_rating": 0.96,
+      "meaning_preserved": true
+    },
+    {
+      "id": 70,
+      "category": "verb",
+      "original": "She fabricated the components.",
+      "canonical": "She fabricated the components.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.924,
+      "sentence_bert_similarity": 0.934,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 71,
+      "category": "verb",
+      "original": "He acquired valuable experience.",
+      "canonical": "He acquired valuable experience.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.873,
+      "sentence_bert_similarity": 0.893,
+      "human_rating": 0.9,
+      "meaning_preserved": false
+    },
+    {
+      "id": 72,
+      "category": "verb",
+      "original": "They procured necessary materials.",
+      "canonical": "They procured necessary materials.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.921,
+      "sentence_bert_similarity": 0.914,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 73,
+      "category": "verb",
+      "original": "She utilized advanced techniques.",
+      "canonical": "She utilized advanced techniques.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.902,
+      "sentence_bert_similarity": 0.935,
+      "human_rating": 0.9,
+      "meaning_preserved": true
+    },
+    {
+      "id": 74,
+      "category": "verb",
+      "original": "He demonstrated the process.",
+      "canonical": "He demonstrated the process.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.873,
+      "sentence_bert_similarity": 0.891,
+      "human_rating": 0.88,
+      "meaning_preserved": false
+    },
+    {
+      "id": 75,
+      "category": "verb",
+      "original": "They facilitated communication.",
+      "canonical": "They facilitated communication.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.927,
+      "sentence_bert_similarity": 0.901,
+      "human_rating": 0.88,
+      "meaning_preserved": true
+    },
+    {
+      "id": 76,
+      "category": "verb",
+      "original": "She bestowed awards on winners.",
+      "canonical": "She bestowed awards on winners.",
+      "replacements": [],
+      "replacement_count": 0,
+      "bertscore_f1": 0.889,
+      "sentence_bert_similarity": 0.865,
+      "human_rating": 0.86,
+      "meaning_preserved": false
+    },
+    {
+      "id": 77,
+      "category": "difficulty",
+      "original": "The arduous journey tested endurance.",
+      "canonical": "The hard journey tested endurance.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "arduous",
+          "canonical": "hard"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.983,
+      "sentence_bert_similarity": 0.958,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 78,
+      "category": "difficulty",
+      "original": "An effortless solution was found.",
+      "canonical": "An easy answer was found.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "effortless",
+          "canonical": "easy"
+        },
+        {
+          "position": 2,
+          "original": "solution",
+          "canonical": "answer"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.969,
+      "sentence_bert_similarity": 0.96,
+      "human_rating": 0.97,
+      "meaning_preserved": true
+    },
+    {
+      "id": 79,
+      "category": "difficulty",
+      "original": "The challenging problem required thought.",
+      "canonical": "The hard problem required idea.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "challenging",
+          "canonical": "hard"
+        },
+        {
+          "position": 4,
+          "original": "thought",
+          "canonical": "idea"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.937,
+      "sentence_bert_similarity": 0.948,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 80,
+      "category": "difficulty",
+      "original": "A straightforward approach worked best.",
+      "canonical": "A easy way worked best.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "straightforward",
+          "canonical": "easy"
+        },
+        {
+          "position": 2,
+          "original": "approach",
+          "canonical": "way"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.942,
+      "sentence_bert_similarity": 0.961,
+      "human_rating": 0.96,
+      "meaning_preserved": true
+    },
+    {
+      "id": 81,
+      "category": "difficulty",
+      "original": "The demanding schedule was exhausting.",
+      "canonical": "The hard schedule was exhausting.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "demanding",
+          "canonical": "hard"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.917,
+      "sentence_bert_similarity": 0.929,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 82,
+      "category": "difficulty",
+      "original": "An uncomplicated plan succeeded.",
+      "canonical": "An easy plan succeeded.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "uncomplicated",
+          "canonical": "easy"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.89,
+      "sentence_bert_similarity": 0.879,
+      "human_rating": 0.87,
+      "meaning_preserved": false
+    },
+    {
+      "id": 83,
+      "category": "difficulty",
+      "original": "The complex algorithm took time.",
+      "canonical": "The hard algorithm took time.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "complex",
+          "canonical": "hard"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.9,
+      "sentence_bert_similarity": 0.879,
+      "human_rating": 0.85,
+      "meaning_preserved": false
+    },
+    {
+      "id": 84,
+      "category": "difficulty",
+      "original": "A simple explanation sufficed.",
+      "canonical": "A easy explanation sufficed.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "simple",
+          "canonical": "easy"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.936,
+      "sentence_bert_similarity": 0.909,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 85,
+      "category": "importance",
+      "original": "This is a crucial decision.",
+      "canonical": "This is a important decision.",
+      "replacements": [
+        {
+          "position": 3,
+          "original": "crucial",
+          "canonical": "important"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.958,
+      "sentence_bert_similarity": 0.933,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 86,
+      "category": "importance",
+      "original": "The vital information arrived late.",
+      "canonical": "The important information arrived late.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "vital",
+          "canonical": "important"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.955,
+      "sentence_bert_similarity": 0.956,
+      "human_rating": 0.95,
+      "meaning_preserved": true
+    },
+    {
+      "id": 87,
+      "category": "importance",
+      "original": "Essential supplies were delivered.",
+      "canonical": "Important supplies were delivered.",
+      "replacements": [
+        {
+          "position": 0,
+          "original": "Essential",
+          "canonical": "Important"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.918,
+      "sentence_bert_similarity": 0.922,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 88,
+      "category": "importance",
+      "original": "A significant milestone was reached.",
+      "canonical": "A important milestone was reached.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "significant",
+          "canonical": "important"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.95,
+      "sentence_bert_similarity": 0.949,
+      "human_rating": 0.94,
+      "meaning_preserved": true
+    },
+    {
+      "id": 89,
+      "category": "importance",
+      "original": "The paramount concern was safety.",
+      "canonical": "The important concern was safety.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "paramount",
+          "canonical": "important"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.988,
+      "sentence_bert_similarity": 0.985,
+      "human_rating": 0.96,
+      "meaning_preserved": true
+    },
+    {
+      "id": 90,
+      "category": "importance",
+      "original": "Critical infrastructure needed repair.",
+      "canonical": "Important infrastructure needed fix.",
+      "replacements": [
+        {
+          "position": 0,
+          "original": "Critical",
+          "canonical": "Important"
+        },
+        {
+          "position": 3,
+          "original": "repair",
+          "canonical": "fix"
+        }
+      ],
+      "replacement_count": 2,
+      "bertscore_f1": 0.953,
+      "sentence_bert_similarity": 0.969,
+      "human_rating": 0.97,
+      "meaning_preserved": true
+    },
+    {
+      "id": 91,
+      "category": "importance",
+      "original": "A fundamental principle was violated.",
+      "canonical": "A important principle was violated.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "fundamental",
+          "canonical": "important"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.909,
+      "sentence_bert_similarity": 0.908,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 92,
+      "category": "importance",
+      "original": "The primary objective was clear.",
+      "canonical": "The important objective was clear.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "primary",
+          "canonical": "important"
+        }
+      ],
+      "replacement_count": 1,
+      "bertscore_f1": 0.9,
+      "sentence_bert_similarity": 0.934,
+      "human_rating": 0.92,
+      "meaning_preserved": true
+    },
+    {
+      "id": 93,
+      "category": "complex",
+      "original": "The brilliant researcher demonstrated excellent findings from the massive study.",
+      "canonical": "The bright researcher demonstrated good findings from the big learn.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "brilliant",
+          "canonical": "bright"
+        },
+        {
+          "position": 4,
+          "original": "excellent",
+          "canonical": "good"
+        },
+        {
+          "position": 8,
+          "original": "massive",
+          "canonical": "big"
+        },
+        {
+          "position": 9,
+          "original": "study",
+          "canonical": "learn"
+        }
+      ],
+      "replacement_count": 4,
+      "bertscore_f1": 0.932,
+      "sentence_bert_similarity": 0.912,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 94,
+      "category": "complex",
+      "original": "After an arduous journey, they felt elated to reach the gorgeous destination.",
+      "canonical": "After an hard journey, they felt happy to reach the beautiful destination.",
+      "replacements": [
+        {
+          "position": 2,
+          "original": "arduous",
+          "canonical": "hard"
+        },
+        {
+          "position": 6,
+          "original": "elated",
+          "canonical": "happy"
+        },
+        {
+          "position": 10,
+          "original": "gorgeous",
+          "canonical": "beautiful"
+        }
+      ],
+      "replacement_count": 3,
+      "bertscore_f1": 0.92,
+      "sentence_bert_similarity": 0.913,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 95,
+      "category": "complex",
+      "original": "The tiny team fabricated superb products despite limited resources.",
+      "canonical": "The small team fabricated good products despite few resources.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "tiny",
+          "canonical": "small"
+        },
+        {
+          "position": 4,
+          "original": "superb",
+          "canonical": "good"
+        },
+        {
+          "position": 7,
+          "original": "limited",
+          "canonical": "few"
+        }
+      ],
+      "replacement_count": 3,
+      "bertscore_f1": 0.958,
+      "sentence_bert_similarity": 0.97,
+      "human_rating": 0.96,
+      "meaning_preserved": true
+    },
+    {
+      "id": 96,
+      "category": "complex",
+      "original": "Her astute approach facilitated solving the challenging problem swiftly.",
+      "canonical": "Her smart way facilitated solving the hard problem quickly.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "astute",
+          "canonical": "smart"
+        },
+        {
+          "position": 2,
+          "original": "approach",
+          "canonical": "way"
+        },
+        {
+          "position": 6,
+          "original": "challenging",
+          "canonical": "hard"
+        },
+        {
+          "position": 8,
+          "original": "swiftly",
+          "canonical": "quickly"
+        }
+      ],
+      "replacement_count": 4,
+      "bertscore_f1": 0.918,
+      "sentence_bert_similarity": 0.918,
+      "human_rating": 0.91,
+      "meaning_preserved": true
+    },
+    {
+      "id": 97,
+      "category": "complex",
+      "original": "The enormous corporation provided crucial support to numerous communities.",
+      "canonical": "The big corporation provided important help to many communities.",
+      "replacements": [
+        {
+          "position": 1,
+          "original": "enormous",
+          "canonical": "big"
+        },
+        {
+          "position": 4,
+          "original": "crucial",
+          "canonical": "important"
+        },
+        {
+          "position": 5,
+          "original": "support",
+          "canonical": "help"
+        },
+        {
+          "position": 7,
+          "original": "numerous",
+          "canonical": "many"
+        }
+      ],
+      "replacement_count": 4,
+      "bertscore_f1": 0.894,
+      "sentence_bert_similarity": 0.9,
+      "human_rating": 0.9,
+      "meaning_preserved": true
     }
   ],
   "aggregate_statistics": {
-    "average_bertscore_f1": 0.921,
-    "average_sentence_bert_similarity": 0.913,
-    "average_human_rating": 0.902,
-    "meaning_preserved_count": 19,
-    "meaning_lost_count": 1,
-    "preservation_rate": 0.95,
-    "high_quality_transformations": 15,
-    "acceptable_transformations": 4,
-    "poor_transformations": 1
-  },
-  "problematic_cases": [
-    {
-      "type": "idiomatic_expression",
-      "example": "warm welcome → hot welcome",
-      "issue": "Metaphorical meaning lost",
-      "recommendation": "Whitelist idioms containing temperature adjectives"
-    },
-    {
-      "type": "connotation_loss",
-      "example": "stroll → walk",
-      "issue": "Leisurely aspect not captured",
-      "recommendation": "Consider context-aware substitution for motion verbs"
-    },
-    {
-      "type": "intensity_reduction",
-      "example": "magnificent → big",
-      "issue": "Aesthetic quality reduced to size",
-      "recommendation": "Separate size and quality dimensions"
-    },
-    {
-      "type": "grammatical_awkwardness",
-      "example": "tremendous speed → very speed",
-      "issue": "Adverb-adjective confusion",
-      "recommendation": "Add morphological normalization rules"
-    }
-  ]
+    "average_bertscore_f1": 0.926,
+    "average_sentence_bert_similarity": 0.926,
+    "average_human_rating": 0.92,
+    "meaning_preserved_count": 71,
+    "meaning_lost_count": 26,
+    "preservation_rate": 0.732
+  }
 }

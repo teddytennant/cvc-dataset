@@ -1,232 +1,1437 @@
 {
   "metadata": {
-    "version": "1.0",
-    "description": "Synonym-to-canonical mappings for CVC dataset",
+    "version": "2.0",
+    "description": "Comprehensive synonym-to-canonical mappings for CVC dataset",
     "creation_date": "2025-11-30",
-    "total_mappings": 250,
-    "sources": ["WordNet", "Manual Curation"]
+    "total_mappings": 117,
+    "sources": [
+      "WordNet",
+      "Manual Curation",
+      "Frequency Analysis"
+    ],
+    "total_synonyms": 604
   },
   "mappings": {
-    "size_adjectives": {
+    "size_big": {
       "canonical": "big",
-      "synonyms": ["large", "huge", "enormous", "gigantic", "massive", "immense", "colossal", "vast", "substantial"],
+      "synonyms": [
+        "large",
+        "huge",
+        "enormous",
+        "gigantic",
+        "massive",
+        "immense",
+        "colossal",
+        "vast",
+        "substantial",
+        "grand",
+        "great",
+        "sizable",
+        "considerable",
+        "extensive",
+        "voluminous"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "size_adjectives_small": {
+    "size_small": {
       "canonical": "small",
-      "synonyms": ["little", "tiny", "minute", "minuscule", "petite", "compact", "miniature"],
+      "synonyms": [
+        "little",
+        "tiny",
+        "minute",
+        "minuscule",
+        "petite",
+        "compact",
+        "miniature",
+        "diminutive",
+        "microscopic",
+        "slight",
+        "puny",
+        "undersized"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "speed_adjectives_fast": {
+    "size_tall": {
+      "canonical": "tall",
+      "synonyms": [
+        "high",
+        "lofty",
+        "towering",
+        "elevated",
+        "soaring"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "size_short": {
+      "canonical": "short",
+      "synonyms": [
+        "low",
+        "squat",
+        "stubby",
+        "compact"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "size_wide": {
+      "canonical": "wide",
+      "synonyms": [
+        "broad",
+        "expansive",
+        "extensive",
+        "spacious",
+        "ample"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "size_narrow": {
+      "canonical": "narrow",
+      "synonyms": [
+        "thin",
+        "slim",
+        "slender",
+        "tight",
+        "confined"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "size_thick": {
+      "canonical": "thick",
+      "synonyms": [
+        "dense",
+        "heavy",
+        "substantial",
+        "chunky"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "speed_fast": {
       "canonical": "fast",
-      "synonyms": ["quick", "rapid", "swift", "speedy", "hasty", "brisk"],
+      "synonyms": [
+        "quick",
+        "rapid",
+        "swift",
+        "speedy",
+        "hasty",
+        "brisk",
+        "fleet",
+        "expeditious",
+        "prompt"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "speed_adjectives_slow": {
+    "speed_slow": {
       "canonical": "slow",
-      "synonyms": ["sluggish", "leisurely", "gradual", "unhurried"],
+      "synonyms": [
+        "sluggish",
+        "leisurely",
+        "gradual",
+        "unhurried",
+        "plodding",
+        "lagging",
+        "dawdling"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "intelligence_adjectives": {
+    "intelligence_smart": {
       "canonical": "smart",
-      "synonyms": ["intelligent", "clever", "bright", "brilliant", "wise", "astute", "sharp"],
+      "synonyms": [
+        "intelligent",
+        "clever",
+        "bright",
+        "brilliant",
+        "wise",
+        "astute",
+        "sharp",
+        "shrewd",
+        "keen",
+        "perceptive",
+        "insightful",
+        "brainy",
+        "gifted",
+        "talented"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "beauty_adjectives": {
+    "intelligence_dumb": {
+      "canonical": "dumb",
+      "synonyms": [
+        "stupid",
+        "foolish",
+        "ignorant",
+        "unintelligent",
+        "dense",
+        "dim",
+        "dull"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "beauty_beautiful": {
       "canonical": "beautiful",
-      "synonyms": ["pretty", "gorgeous", "stunning", "lovely", "attractive", "handsome", "elegant"],
+      "synonyms": [
+        "pretty",
+        "gorgeous",
+        "stunning",
+        "lovely",
+        "attractive",
+        "handsome",
+        "elegant",
+        "exquisite",
+        "graceful",
+        "charming",
+        "appealing",
+        "alluring",
+        "radiant"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "beauty_ugly": {
+      "canonical": "ugly",
+      "synonyms": [
+        "unattractive",
+        "hideous",
+        "unsightly",
+        "grotesque",
+        "homely"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
     "emotion_happy": {
       "canonical": "happy",
-      "synonyms": ["joyful", "cheerful", "delighted", "pleased", "content", "glad", "elated", "jubilant"],
+      "synonyms": [
+        "joyful",
+        "cheerful",
+        "delighted",
+        "pleased",
+        "content",
+        "glad",
+        "elated",
+        "jubilant",
+        "ecstatic",
+        "blissful",
+        "merry",
+        "jovial",
+        "upbeat"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
     "emotion_sad": {
       "canonical": "sad",
-      "synonyms": ["unhappy", "sorrowful", "melancholy", "dejected", "gloomy", "downcast", "depressed"],
+      "synonyms": [
+        "unhappy",
+        "sorrowful",
+        "melancholy",
+        "dejected",
+        "gloomy",
+        "downcast",
+        "depressed",
+        "miserable",
+        "mournful",
+        "woeful",
+        "dismal"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
     "emotion_angry": {
       "canonical": "angry",
-      "synonyms": ["furious", "irate", "enraged", "livid", "mad", "wrathful", "incensed"],
+      "synonyms": [
+        "furious",
+        "irate",
+        "enraged",
+        "livid",
+        "mad",
+        "wrathful",
+        "incensed",
+        "outraged",
+        "infuriated",
+        "indignant"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "verb_say": {
-      "canonical": "say",
-      "synonyms": ["state", "declare", "mention", "remark", "express", "articulate", "utter"],
+    "emotion_scared": {
+      "canonical": "scared",
+      "synonyms": [
+        "afraid",
+        "frightened",
+        "fearful",
+        "terrified",
+        "alarmed",
+        "panicked",
+        "anxious",
+        "nervous",
+        "worried"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "verb_walk": {
-      "canonical": "walk",
-      "synonyms": ["stroll", "saunter", "amble", "wander", "stride"],
+    "emotion_excited": {
+      "canonical": "excited",
+      "synonyms": [
+        "thrilled",
+        "enthusiastic",
+        "eager",
+        "animated",
+        "energized"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "verb_run": {
-      "canonical": "run",
-      "synonyms": ["sprint", "dash", "race", "bolt", "rush"],
+    "emotion_calm": {
+      "canonical": "calm",
+      "synonyms": [
+        "peaceful",
+        "serene",
+        "tranquil",
+        "placid",
+        "relaxed",
+        "composed"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "verb_look": {
-      "canonical": "look",
-      "synonyms": ["gaze", "stare", "glance", "peer", "observe", "view", "watch"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "verb_think": {
-      "canonical": "think",
-      "synonyms": ["ponder", "contemplate", "reflect", "consider", "deliberate", "meditate"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "verb_help": {
-      "canonical": "help",
-      "synonyms": ["assist", "aid", "support", "facilitate"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "verb_show": {
-      "canonical": "show",
-      "synonyms": ["display", "exhibit", "demonstrate", "present", "reveal"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "verb_make": {
-      "canonical": "make",
-      "synonyms": ["create", "build", "construct", "fabricate", "manufacture", "produce"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "verb_get": {
-      "canonical": "get",
-      "synonyms": ["obtain", "acquire", "procure", "secure", "gain", "receive"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "verb_give": {
-      "canonical": "give",
-      "synonyms": ["provide", "supply", "offer", "grant", "bestow", "donate"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "verb_use": {
-      "canonical": "use",
-      "synonyms": ["utilize", "employ", "apply", "exercise"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "noun_person": {
-      "canonical": "person",
-      "synonyms": ["individual", "human", "being"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "noun_house": {
-      "canonical": "house",
-      "synonyms": ["home", "residence", "dwelling", "abode", "domicile"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "noun_car": {
-      "canonical": "car",
-      "synonyms": ["automobile", "vehicle", "auto"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "noun_job": {
-      "canonical": "job",
-      "synonyms": ["occupation", "profession", "career", "employment", "vocation"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "noun_money": {
-      "canonical": "money",
-      "synonyms": ["cash", "currency", "funds", "capital"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "adverb_very": {
-      "canonical": "very",
-      "synonyms": ["extremely", "exceedingly", "exceptionally", "tremendously", "remarkably"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "adverb_quickly": {
-      "canonical": "quickly",
-      "synonyms": ["rapidly", "swiftly", "speedily", "hastily", "promptly"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "importance_adjectives": {
-      "canonical": "important",
-      "synonyms": ["significant", "crucial", "vital", "essential", "critical", "key"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "difficulty_adjectives_easy": {
-      "canonical": "easy",
-      "synonyms": ["simple", "straightforward", "effortless", "uncomplicated"],
-      "frequency_rank": 1,
-      "domain": "general"
-    },
-    "difficulty_adjectives_hard": {
-      "canonical": "hard",
-      "synonyms": ["difficult", "challenging", "tough", "arduous", "demanding"],
+    "emotion_surprised": {
+      "canonical": "surprised",
+      "synonyms": [
+        "astonished",
+        "amazed",
+        "shocked",
+        "startled",
+        "stunned",
+        "astounded"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
     "quality_good": {
       "canonical": "good",
-      "synonyms": ["excellent", "great", "fine", "superb", "wonderful", "outstanding"],
+      "synonyms": [
+        "excellent",
+        "great",
+        "fine",
+        "superb",
+        "wonderful",
+        "outstanding",
+        "superior",
+        "splendid",
+        "marvelous",
+        "fantastic",
+        "terrific",
+        "fabulous",
+        "stellar"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
     "quality_bad": {
       "canonical": "bad",
-      "synonyms": ["poor", "terrible", "awful", "dreadful", "inferior"],
+      "synonyms": [
+        "poor",
+        "terrible",
+        "awful",
+        "dreadful",
+        "inferior",
+        "substandard",
+        "mediocre",
+        "lousy",
+        "dismal",
+        "abysmal"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "certainty_sure": {
-      "canonical": "sure",
-      "synonyms": ["certain", "confident", "positive", "convinced"],
+    "difficulty_easy": {
+      "canonical": "easy",
+      "synonyms": [
+        "simple",
+        "straightforward",
+        "effortless",
+        "uncomplicated",
+        "elementary",
+        "basic",
+        "painless"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "difficulty_hard": {
+      "canonical": "hard",
+      "synonyms": [
+        "difficult",
+        "challenging",
+        "tough",
+        "arduous",
+        "demanding",
+        "strenuous",
+        "laborious",
+        "complex",
+        "complicated"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "importance_important": {
+      "canonical": "important",
+      "synonyms": [
+        "significant",
+        "crucial",
+        "vital",
+        "essential",
+        "critical",
+        "key",
+        "major",
+        "fundamental",
+        "primary",
+        "principal",
+        "paramount"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "importance_unimportant": {
+      "canonical": "unimportant",
+      "synonyms": [
+        "insignificant",
+        "trivial",
+        "minor",
+        "petty",
+        "negligible"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
     "quantity_many": {
       "canonical": "many",
-      "synonyms": ["numerous", "multiple", "several", "various"],
+      "synonyms": [
+        "numerous",
+        "multiple",
+        "several",
+        "various",
+        "countless",
+        "abundant",
+        "plentiful"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
     "quantity_few": {
       "canonical": "few",
-      "synonyms": ["scarce", "rare", "limited"],
+      "synonyms": [
+        "scarce",
+        "rare",
+        "limited",
+        "sparse",
+        "scant"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     },
-    "temperature_hot": {
+    "temp_hot": {
       "canonical": "hot",
-      "synonyms": ["warm", "heated", "scorching", "burning"],
+      "synonyms": [
+        "warm",
+        "heated",
+        "scorching",
+        "burning",
+        "sweltering",
+        "torrid",
+        "blazing",
+        "searing",
+        "boiling"
+      ],
       "frequency_rank": 1,
-      "domain": "general",
-      "notes": "Context-sensitive: 'warm' may need separate handling"
+      "domain": "general"
     },
-    "temperature_cold": {
+    "temp_cold": {
       "canonical": "cold",
-      "synonyms": ["chilly", "cool", "freezing", "frigid", "icy"],
+      "synonyms": [
+        "chilly",
+        "cool",
+        "freezing",
+        "frigid",
+        "icy",
+        "frosty",
+        "arctic",
+        "wintry"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "certainty_sure": {
+      "canonical": "sure",
+      "synonyms": [
+        "certain",
+        "confident",
+        "positive",
+        "convinced",
+        "assured",
+        "definite"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "certainty_unsure": {
+      "canonical": "unsure",
+      "synonyms": [
+        "uncertain",
+        "doubtful",
+        "hesitant",
+        "dubious",
+        "skeptical"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "age_old": {
+      "canonical": "old",
+      "synonyms": [
+        "ancient",
+        "aged",
+        "elderly",
+        "antique",
+        "archaic",
+        "veteran"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "age_new": {
+      "canonical": "new",
+      "synonyms": [
+        "fresh",
+        "recent",
+        "modern",
+        "contemporary",
+        "novel",
+        "latest"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "age_young": {
+      "canonical": "young",
+      "synonyms": [
+        "youthful",
+        "juvenile",
+        "adolescent",
+        "immature"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "strength_strong": {
+      "canonical": "strong",
+      "synonyms": [
+        "powerful",
+        "robust",
+        "sturdy",
+        "mighty",
+        "potent",
+        "forceful"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "strength_weak": {
+      "canonical": "weak",
+      "synonyms": [
+        "feeble",
+        "frail",
+        "fragile",
+        "delicate",
+        "flimsy"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "clean_clean": {
+      "canonical": "clean",
+      "synonyms": [
+        "spotless",
+        "pristine",
+        "immaculate",
+        "sanitary",
+        "hygienic"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "clean_dirty": {
+      "canonical": "dirty",
+      "synonyms": [
+        "filthy",
+        "grimy",
+        "soiled",
+        "unclean",
+        "muddy"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "light_bright": {
+      "canonical": "bright",
+      "synonyms": [
+        "luminous",
+        "brilliant",
+        "radiant",
+        "vivid",
+        "glowing"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "light_dark": {
+      "canonical": "dark",
+      "synonyms": [
+        "dim",
+        "shadowy",
+        "gloomy",
+        "murky",
+        "dusky"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "wet_wet": {
+      "canonical": "wet",
+      "synonyms": [
+        "damp",
+        "moist",
+        "soaked",
+        "drenched",
+        "saturated"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "wet_dry": {
+      "canonical": "dry",
+      "synonyms": [
+        "arid",
+        "parched",
+        "dehydrated",
+        "desiccated"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noise_loud": {
+      "canonical": "loud",
+      "synonyms": [
+        "noisy",
+        "deafening",
+        "thunderous",
+        "booming",
+        "roaring"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noise_quiet": {
+      "canonical": "quiet",
+      "synonyms": [
+        "silent",
+        "hushed",
+        "muted",
+        "soft",
+        "peaceful"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_say": {
+      "canonical": "say",
+      "synonyms": [
+        "state",
+        "declare",
+        "mention",
+        "remark",
+        "express",
+        "articulate",
+        "utter",
+        "announce",
+        "proclaim",
+        "assert"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_ask": {
+      "canonical": "ask",
+      "synonyms": [
+        "inquire",
+        "question",
+        "query",
+        "request"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_tell": {
+      "canonical": "tell",
+      "synonyms": [
+        "inform",
+        "notify",
+        "advise",
+        "relate",
+        "recount"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_talk": {
+      "canonical": "talk",
+      "synonyms": [
+        "speak",
+        "converse",
+        "chat",
+        "discuss",
+        "communicate"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_shout": {
+      "canonical": "shout",
+      "synonyms": [
+        "yell",
+        "scream",
+        "holler",
+        "bellow",
+        "roar"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_whisper": {
+      "canonical": "whisper",
+      "synonyms": [
+        "murmur",
+        "mutter",
+        "mumble"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_walk": {
+      "canonical": "walk",
+      "synonyms": [
+        "stroll",
+        "saunter",
+        "amble",
+        "wander",
+        "stride",
+        "trek",
+        "hike",
+        "march"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_run": {
+      "canonical": "run",
+      "synonyms": [
+        "sprint",
+        "dash",
+        "race",
+        "bolt",
+        "rush",
+        "hurry"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_jump": {
+      "canonical": "jump",
+      "synonyms": [
+        "leap",
+        "bound",
+        "hop",
+        "spring",
+        "vault"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_sit": {
+      "canonical": "sit",
+      "synonyms": [
+        "rest",
+        "settle",
+        "perch"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_stand": {
+      "canonical": "stand",
+      "synonyms": [
+        "rise",
+        "arise"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_fall": {
+      "canonical": "fall",
+      "synonyms": [
+        "drop",
+        "tumble",
+        "plunge",
+        "descend",
+        "collapse"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_look": {
+      "canonical": "look",
+      "synonyms": [
+        "gaze",
+        "stare",
+        "glance",
+        "peer",
+        "observe",
+        "view",
+        "watch",
+        "examine",
+        "inspect"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_see": {
+      "canonical": "see",
+      "synonyms": [
+        "notice",
+        "spot",
+        "perceive",
+        "detect",
+        "discern"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_hear": {
+      "canonical": "hear",
+      "synonyms": [
+        "listen",
+        "overhear"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_smell": {
+      "canonical": "smell",
+      "synonyms": [
+        "sniff",
+        "scent"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_taste": {
+      "canonical": "taste",
+      "synonyms": [
+        "sample",
+        "savor"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_touch": {
+      "canonical": "touch",
+      "synonyms": [
+        "feel",
+        "handle",
+        "grasp"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_think": {
+      "canonical": "think",
+      "synonyms": [
+        "ponder",
+        "contemplate",
+        "reflect",
+        "consider",
+        "deliberate",
+        "meditate",
+        "ruminate",
+        "muse"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_know": {
+      "canonical": "know",
+      "synonyms": [
+        "understand",
+        "comprehend",
+        "grasp",
+        "realize"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_remember": {
+      "canonical": "remember",
+      "synonyms": [
+        "recall",
+        "recollect"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_forget": {
+      "canonical": "forget",
+      "synonyms": [
+        "overlook",
+        "disregard"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_learn": {
+      "canonical": "learn",
+      "synonyms": [
+        "study",
+        "master",
+        "acquire"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_teach": {
+      "canonical": "teach",
+      "synonyms": [
+        "instruct",
+        "educate",
+        "train",
+        "tutor"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_make": {
+      "canonical": "make",
+      "synonyms": [
+        "create",
+        "build",
+        "construct",
+        "fabricate",
+        "manufacture",
+        "produce",
+        "craft",
+        "form"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_break": {
+      "canonical": "break",
+      "synonyms": [
+        "shatter",
+        "smash",
+        "fracture",
+        "crack",
+        "destroy"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_fix": {
+      "canonical": "fix",
+      "synonyms": [
+        "repair",
+        "mend",
+        "restore"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_help": {
+      "canonical": "help",
+      "synonyms": [
+        "assist",
+        "aid",
+        "support",
+        "facilitate"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_hurt": {
+      "canonical": "hurt",
+      "synonyms": [
+        "harm",
+        "injure",
+        "wound",
+        "damage"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_use": {
+      "canonical": "use",
+      "synonyms": [
+        "utilize",
+        "employ",
+        "apply",
+        "exercise"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_show": {
+      "canonical": "show",
+      "synonyms": [
+        "display",
+        "exhibit",
+        "demonstrate",
+        "present",
+        "reveal"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_hide": {
+      "canonical": "hide",
+      "synonyms": [
+        "conceal",
+        "cover",
+        "obscure"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_find": {
+      "canonical": "find",
+      "synonyms": [
+        "discover",
+        "locate",
+        "uncover",
+        "detect"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_lose": {
+      "canonical": "lose",
+      "synonyms": [
+        "misplace",
+        "forfeit"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_get": {
+      "canonical": "get",
+      "synonyms": [
+        "obtain",
+        "acquire",
+        "procure",
+        "secure",
+        "gain",
+        "receive"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_give": {
+      "canonical": "give",
+      "synonyms": [
+        "provide",
+        "supply",
+        "offer",
+        "grant",
+        "bestow",
+        "donate"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_take": {
+      "canonical": "take",
+      "synonyms": [
+        "grab",
+        "seize",
+        "grasp",
+        "capture"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_send": {
+      "canonical": "send",
+      "synonyms": [
+        "transmit",
+        "dispatch",
+        "deliver",
+        "forward"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_bring": {
+      "canonical": "bring",
+      "synonyms": [
+        "carry",
+        "transport",
+        "convey"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_buy": {
+      "canonical": "buy",
+      "synonyms": [
+        "purchase",
+        "acquire"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_sell": {
+      "canonical": "sell",
+      "synonyms": [
+        "vend",
+        "market"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_start": {
+      "canonical": "start",
+      "synonyms": [
+        "begin",
+        "commence",
+        "initiate",
+        "launch"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_stop": {
+      "canonical": "stop",
+      "synonyms": [
+        "cease",
+        "halt",
+        "terminate",
+        "end"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_continue": {
+      "canonical": "continue",
+      "synonyms": [
+        "proceed",
+        "persist",
+        "resume"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_change": {
+      "canonical": "change",
+      "synonyms": [
+        "alter",
+        "modify",
+        "transform",
+        "convert"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_keep": {
+      "canonical": "keep",
+      "synonyms": [
+        "retain",
+        "maintain",
+        "preserve"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "verb_try": {
+      "canonical": "try",
+      "synonyms": [
+        "attempt",
+        "endeavor",
+        "strive"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_person": {
+      "canonical": "person",
+      "synonyms": [
+        "individual",
+        "human",
+        "being"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_people": {
+      "canonical": "people",
+      "synonyms": [
+        "individuals",
+        "persons",
+        "folks"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_child": {
+      "canonical": "child",
+      "synonyms": [
+        "kid",
+        "youngster",
+        "youth"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_house": {
+      "canonical": "house",
+      "synonyms": [
+        "home",
+        "residence",
+        "dwelling",
+        "abode",
+        "domicile"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_car": {
+      "canonical": "car",
+      "synonyms": [
+        "automobile",
+        "vehicle",
+        "auto"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_job": {
+      "canonical": "job",
+      "synonyms": [
+        "occupation",
+        "profession",
+        "career",
+        "employment",
+        "vocation",
+        "position"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_money": {
+      "canonical": "money",
+      "synonyms": [
+        "cash",
+        "currency",
+        "funds",
+        "capital"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_food": {
+      "canonical": "food",
+      "synonyms": [
+        "meal",
+        "nourishment",
+        "sustenance"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_water": {
+      "canonical": "water",
+      "synonyms": [
+        "liquid",
+        "fluid"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_place": {
+      "canonical": "place",
+      "synonyms": [
+        "location",
+        "spot",
+        "site",
+        "position"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_thing": {
+      "canonical": "thing",
+      "synonyms": [
+        "object",
+        "item",
+        "article"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_time": {
+      "canonical": "time",
+      "synonyms": [
+        "period",
+        "duration",
+        "moment"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_way": {
+      "canonical": "way",
+      "synonyms": [
+        "method",
+        "manner",
+        "approach"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_idea": {
+      "canonical": "idea",
+      "synonyms": [
+        "concept",
+        "thought",
+        "notion"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_problem": {
+      "canonical": "problem",
+      "synonyms": [
+        "issue",
+        "difficulty",
+        "challenge"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "noun_answer": {
+      "canonical": "answer",
+      "synonyms": [
+        "solution",
+        "response",
+        "reply"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_very": {
+      "canonical": "very",
+      "synonyms": [
+        "extremely",
+        "exceedingly",
+        "exceptionally",
+        "tremendously",
+        "remarkably",
+        "highly"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_quickly": {
+      "canonical": "quickly",
+      "synonyms": [
+        "rapidly",
+        "swiftly",
+        "speedily",
+        "hastily",
+        "promptly"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_slowly": {
+      "canonical": "slowly",
+      "synonyms": [
+        "gradually",
+        "leisurely"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_often": {
+      "canonical": "often",
+      "synonyms": [
+        "frequently",
+        "commonly",
+        "regularly"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_rarely": {
+      "canonical": "rarely",
+      "synonyms": [
+        "seldom",
+        "infrequently"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_always": {
+      "canonical": "always",
+      "synonyms": [
+        "constantly",
+        "continually",
+        "perpetually"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_never": {
+      "canonical": "never",
+      "synonyms": [
+        "not ever"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_well": {
+      "canonical": "well",
+      "synonyms": [
+        "properly",
+        "correctly",
+        "effectively"
+      ],
+      "frequency_rank": 1,
+      "domain": "general"
+    },
+    "adverb_badly": {
+      "canonical": "badly",
+      "synonyms": [
+        "poorly",
+        "inadequately"
+      ],
       "frequency_rank": 1,
       "domain": "general"
     }
@@ -240,31 +1445,81 @@
     "immense": "big",
     "colossal": "big",
     "vast": "big",
-    "substantial": "big",
+    "substantial": "thick",
+    "grand": "big",
+    "great": "good",
+    "sizable": "big",
+    "considerable": "big",
+    "extensive": "wide",
+    "voluminous": "big",
     "little": "small",
     "tiny": "small",
     "minute": "small",
     "minuscule": "small",
     "petite": "small",
-    "compact": "small",
+    "compact": "short",
     "miniature": "small",
+    "diminutive": "small",
+    "microscopic": "small",
+    "slight": "small",
+    "puny": "small",
+    "undersized": "small",
+    "high": "tall",
+    "lofty": "tall",
+    "towering": "tall",
+    "elevated": "tall",
+    "soaring": "tall",
+    "low": "short",
+    "squat": "short",
+    "stubby": "short",
+    "broad": "wide",
+    "expansive": "wide",
+    "spacious": "wide",
+    "ample": "wide",
+    "thin": "narrow",
+    "slim": "narrow",
+    "slender": "narrow",
+    "tight": "narrow",
+    "confined": "narrow",
+    "dense": "dumb",
+    "heavy": "thick",
+    "chunky": "thick",
     "quick": "fast",
     "rapid": "fast",
     "swift": "fast",
     "speedy": "fast",
     "hasty": "fast",
     "brisk": "fast",
+    "fleet": "fast",
+    "expeditious": "fast",
+    "prompt": "fast",
     "sluggish": "slow",
-    "leisurely": "slow",
+    "leisurely": "slowly",
     "gradual": "slow",
     "unhurried": "slow",
+    "plodding": "slow",
+    "lagging": "slow",
+    "dawdling": "slow",
     "intelligent": "smart",
     "clever": "smart",
     "bright": "smart",
-    "brilliant": "smart",
+    "brilliant": "bright",
     "wise": "smart",
     "astute": "smart",
     "sharp": "smart",
+    "shrewd": "smart",
+    "keen": "smart",
+    "perceptive": "smart",
+    "insightful": "smart",
+    "brainy": "smart",
+    "gifted": "smart",
+    "talented": "smart",
+    "stupid": "dumb",
+    "foolish": "dumb",
+    "ignorant": "dumb",
+    "unintelligent": "dumb",
+    "dim": "dark",
+    "dull": "dumb",
     "pretty": "beautiful",
     "gorgeous": "beautiful",
     "stunning": "beautiful",
@@ -272,6 +1527,17 @@
     "attractive": "beautiful",
     "handsome": "beautiful",
     "elegant": "beautiful",
+    "exquisite": "beautiful",
+    "graceful": "beautiful",
+    "charming": "beautiful",
+    "appealing": "beautiful",
+    "alluring": "beautiful",
+    "radiant": "bright",
+    "unattractive": "ugly",
+    "hideous": "ugly",
+    "unsightly": "ugly",
+    "grotesque": "ugly",
+    "homely": "ugly",
     "joyful": "happy",
     "cheerful": "happy",
     "delighted": "happy",
@@ -280,13 +1546,22 @@
     "glad": "happy",
     "elated": "happy",
     "jubilant": "happy",
+    "ecstatic": "happy",
+    "blissful": "happy",
+    "merry": "happy",
+    "jovial": "happy",
+    "upbeat": "happy",
     "unhappy": "sad",
     "sorrowful": "sad",
     "melancholy": "sad",
     "dejected": "sad",
-    "gloomy": "sad",
+    "gloomy": "dark",
     "downcast": "sad",
     "depressed": "sad",
+    "miserable": "sad",
+    "mournful": "sad",
+    "woeful": "sad",
+    "dismal": "bad",
     "furious": "angry",
     "irate": "angry",
     "enraged": "angry",
@@ -294,6 +1569,189 @@
     "mad": "angry",
     "wrathful": "angry",
     "incensed": "angry",
+    "outraged": "angry",
+    "infuriated": "angry",
+    "indignant": "angry",
+    "afraid": "scared",
+    "frightened": "scared",
+    "fearful": "scared",
+    "terrified": "scared",
+    "alarmed": "scared",
+    "panicked": "scared",
+    "anxious": "scared",
+    "nervous": "scared",
+    "worried": "scared",
+    "thrilled": "excited",
+    "enthusiastic": "excited",
+    "eager": "excited",
+    "animated": "excited",
+    "energized": "excited",
+    "peaceful": "quiet",
+    "serene": "calm",
+    "tranquil": "calm",
+    "placid": "calm",
+    "relaxed": "calm",
+    "composed": "calm",
+    "astonished": "surprised",
+    "amazed": "surprised",
+    "shocked": "surprised",
+    "startled": "surprised",
+    "stunned": "surprised",
+    "astounded": "surprised",
+    "excellent": "good",
+    "fine": "good",
+    "superb": "good",
+    "wonderful": "good",
+    "outstanding": "good",
+    "superior": "good",
+    "splendid": "good",
+    "marvelous": "good",
+    "fantastic": "good",
+    "terrific": "good",
+    "fabulous": "good",
+    "stellar": "good",
+    "poor": "bad",
+    "terrible": "bad",
+    "awful": "bad",
+    "dreadful": "bad",
+    "inferior": "bad",
+    "substandard": "bad",
+    "mediocre": "bad",
+    "lousy": "bad",
+    "abysmal": "bad",
+    "simple": "easy",
+    "straightforward": "easy",
+    "effortless": "easy",
+    "uncomplicated": "easy",
+    "elementary": "easy",
+    "basic": "easy",
+    "painless": "easy",
+    "difficult": "hard",
+    "challenging": "hard",
+    "tough": "hard",
+    "arduous": "hard",
+    "demanding": "hard",
+    "strenuous": "hard",
+    "laborious": "hard",
+    "complex": "hard",
+    "complicated": "hard",
+    "significant": "important",
+    "crucial": "important",
+    "vital": "important",
+    "essential": "important",
+    "critical": "important",
+    "key": "important",
+    "major": "important",
+    "fundamental": "important",
+    "primary": "important",
+    "principal": "important",
+    "paramount": "important",
+    "insignificant": "unimportant",
+    "trivial": "unimportant",
+    "minor": "unimportant",
+    "petty": "unimportant",
+    "negligible": "unimportant",
+    "numerous": "many",
+    "multiple": "many",
+    "several": "many",
+    "various": "many",
+    "countless": "many",
+    "abundant": "many",
+    "plentiful": "many",
+    "scarce": "few",
+    "rare": "few",
+    "limited": "few",
+    "sparse": "few",
+    "scant": "few",
+    "warm": "hot",
+    "heated": "hot",
+    "scorching": "hot",
+    "burning": "hot",
+    "sweltering": "hot",
+    "torrid": "hot",
+    "blazing": "hot",
+    "searing": "hot",
+    "boiling": "hot",
+    "chilly": "cold",
+    "cool": "cold",
+    "freezing": "cold",
+    "frigid": "cold",
+    "icy": "cold",
+    "frosty": "cold",
+    "arctic": "cold",
+    "wintry": "cold",
+    "certain": "sure",
+    "confident": "sure",
+    "positive": "sure",
+    "convinced": "sure",
+    "assured": "sure",
+    "definite": "sure",
+    "uncertain": "unsure",
+    "doubtful": "unsure",
+    "hesitant": "unsure",
+    "dubious": "unsure",
+    "skeptical": "unsure",
+    "ancient": "old",
+    "aged": "old",
+    "elderly": "old",
+    "antique": "old",
+    "archaic": "old",
+    "veteran": "old",
+    "fresh": "new",
+    "recent": "new",
+    "modern": "new",
+    "contemporary": "new",
+    "novel": "new",
+    "latest": "new",
+    "youthful": "young",
+    "juvenile": "young",
+    "adolescent": "young",
+    "immature": "young",
+    "powerful": "strong",
+    "robust": "strong",
+    "sturdy": "strong",
+    "mighty": "strong",
+    "potent": "strong",
+    "forceful": "strong",
+    "feeble": "weak",
+    "frail": "weak",
+    "fragile": "weak",
+    "delicate": "weak",
+    "flimsy": "weak",
+    "spotless": "clean",
+    "pristine": "clean",
+    "immaculate": "clean",
+    "sanitary": "clean",
+    "hygienic": "clean",
+    "filthy": "dirty",
+    "grimy": "dirty",
+    "soiled": "dirty",
+    "unclean": "dirty",
+    "muddy": "dirty",
+    "luminous": "bright",
+    "vivid": "bright",
+    "glowing": "bright",
+    "shadowy": "dark",
+    "murky": "dark",
+    "dusky": "dark",
+    "damp": "wet",
+    "moist": "wet",
+    "soaked": "wet",
+    "drenched": "wet",
+    "saturated": "wet",
+    "arid": "dry",
+    "parched": "dry",
+    "dehydrated": "dry",
+    "desiccated": "dry",
+    "noisy": "loud",
+    "deafening": "loud",
+    "thunderous": "loud",
+    "booming": "loud",
+    "roaring": "loud",
+    "silent": "quiet",
+    "hushed": "quiet",
+    "muted": "quiet",
+    "soft": "quiet",
     "state": "say",
     "declare": "say",
     "mention": "say",
@@ -301,16 +1759,60 @@
     "express": "say",
     "articulate": "say",
     "utter": "say",
+    "announce": "say",
+    "proclaim": "say",
+    "assert": "say",
+    "inquire": "ask",
+    "question": "ask",
+    "query": "ask",
+    "request": "ask",
+    "inform": "tell",
+    "notify": "tell",
+    "advise": "tell",
+    "relate": "tell",
+    "recount": "tell",
+    "speak": "talk",
+    "converse": "talk",
+    "chat": "talk",
+    "discuss": "talk",
+    "communicate": "talk",
+    "yell": "shout",
+    "scream": "shout",
+    "holler": "shout",
+    "bellow": "shout",
+    "roar": "shout",
+    "murmur": "whisper",
+    "mutter": "whisper",
+    "mumble": "whisper",
     "stroll": "walk",
     "saunter": "walk",
     "amble": "walk",
     "wander": "walk",
     "stride": "walk",
+    "trek": "walk",
+    "hike": "walk",
+    "march": "walk",
     "sprint": "run",
     "dash": "run",
     "race": "run",
     "bolt": "run",
     "rush": "run",
+    "hurry": "run",
+    "leap": "jump",
+    "bound": "jump",
+    "hop": "jump",
+    "spring": "jump",
+    "vault": "jump",
+    "rest": "sit",
+    "settle": "sit",
+    "perch": "sit",
+    "rise": "stand",
+    "arise": "stand",
+    "drop": "fall",
+    "tumble": "fall",
+    "plunge": "fall",
+    "descend": "fall",
+    "collapse": "fall",
     "gaze": "look",
     "stare": "look",
     "glance": "look",
@@ -318,29 +1820,86 @@
     "observe": "look",
     "view": "look",
     "watch": "look",
+    "examine": "look",
+    "inspect": "look",
+    "notice": "see",
+    "spot": "place",
+    "perceive": "see",
+    "detect": "find",
+    "discern": "see",
+    "listen": "hear",
+    "overhear": "hear",
+    "sniff": "smell",
+    "scent": "smell",
+    "sample": "taste",
+    "savor": "taste",
+    "feel": "touch",
+    "handle": "touch",
+    "grasp": "take",
     "ponder": "think",
     "contemplate": "think",
     "reflect": "think",
     "consider": "think",
     "deliberate": "think",
     "meditate": "think",
-    "assist": "help",
-    "aid": "help",
-    "support": "help",
-    "facilitate": "help",
-    "display": "show",
-    "exhibit": "show",
-    "demonstrate": "show",
-    "present": "show",
-    "reveal": "show",
+    "ruminate": "think",
+    "muse": "think",
+    "understand": "know",
+    "comprehend": "know",
+    "realize": "know",
+    "recall": "remember",
+    "recollect": "remember",
+    "overlook": "forget",
+    "disregard": "forget",
+    "study": "learn",
+    "master": "learn",
+    "acquire": "buy",
+    "instruct": "teach",
+    "educate": "teach",
+    "train": "teach",
+    "tutor": "teach",
     "create": "make",
     "build": "make",
     "construct": "make",
     "fabricate": "make",
     "manufacture": "make",
     "produce": "make",
+    "craft": "make",
+    "form": "make",
+    "shatter": "break",
+    "smash": "break",
+    "fracture": "break",
+    "crack": "break",
+    "destroy": "break",
+    "repair": "fix",
+    "mend": "fix",
+    "restore": "fix",
+    "assist": "help",
+    "aid": "help",
+    "support": "help",
+    "facilitate": "help",
+    "harm": "hurt",
+    "injure": "hurt",
+    "wound": "hurt",
+    "damage": "hurt",
+    "utilize": "use",
+    "employ": "use",
+    "apply": "use",
+    "exercise": "use",
+    "display": "show",
+    "exhibit": "show",
+    "demonstrate": "show",
+    "present": "show",
+    "reveal": "show",
+    "conceal": "hide",
+    "cover": "hide",
+    "obscure": "hide",
+    "discover": "find",
+    "locate": "find",
+    "uncover": "find",
+    "misplace": "lose",
+    "forfeit": "lose",
     "obtain": "get",
-    "acquire": "get",
     "procure": "get",
     "secure": "get",
     "gain": "get",
@@ -351,13 +1910,49 @@
     "grant": "give",
     "bestow": "give",
     "donate": "give",
-    "utilize": "use",
-    "employ": "use",
-    "apply": "use",
-    "exercise": "use",
+    "grab": "take",
+    "seize": "take",
+    "capture": "take",
+    "transmit": "send",
+    "dispatch": "send",
+    "deliver": "send",
+    "forward": "send",
+    "carry": "bring",
+    "transport": "bring",
+    "convey": "bring",
+    "purchase": "buy",
+    "vend": "sell",
+    "market": "sell",
+    "begin": "start",
+    "commence": "start",
+    "initiate": "start",
+    "launch": "start",
+    "cease": "stop",
+    "halt": "stop",
+    "terminate": "stop",
+    "end": "stop",
+    "proceed": "continue",
+    "persist": "continue",
+    "resume": "continue",
+    "alter": "change",
+    "modify": "change",
+    "transform": "change",
+    "convert": "change",
+    "retain": "keep",
+    "maintain": "keep",
+    "preserve": "keep",
+    "attempt": "try",
+    "endeavor": "try",
+    "strive": "try",
     "individual": "person",
     "human": "person",
     "being": "person",
+    "individuals": "people",
+    "persons": "people",
+    "folks": "people",
+    "kid": "child",
+    "youngster": "child",
+    "youth": "child",
     "home": "house",
     "residence": "house",
     "dwelling": "house",
@@ -371,65 +1966,61 @@
     "career": "job",
     "employment": "job",
     "vocation": "job",
+    "position": "place",
     "cash": "money",
     "currency": "money",
     "funds": "money",
     "capital": "money",
+    "meal": "food",
+    "nourishment": "food",
+    "sustenance": "food",
+    "liquid": "water",
+    "fluid": "water",
+    "location": "place",
+    "site": "place",
+    "object": "thing",
+    "item": "thing",
+    "article": "thing",
+    "period": "time",
+    "duration": "time",
+    "moment": "time",
+    "method": "way",
+    "manner": "way",
+    "approach": "way",
+    "concept": "idea",
+    "thought": "idea",
+    "notion": "idea",
+    "issue": "problem",
+    "difficulty": "problem",
+    "challenge": "problem",
+    "solution": "answer",
+    "response": "answer",
+    "reply": "answer",
     "extremely": "very",
     "exceedingly": "very",
     "exceptionally": "very",
     "tremendously": "very",
     "remarkably": "very",
+    "highly": "very",
     "rapidly": "quickly",
     "swiftly": "quickly",
     "speedily": "quickly",
     "hastily": "quickly",
     "promptly": "quickly",
-    "significant": "important",
-    "crucial": "important",
-    "vital": "important",
-    "essential": "important",
-    "critical": "important",
-    "key": "important",
-    "simple": "easy",
-    "straightforward": "easy",
-    "effortless": "easy",
-    "uncomplicated": "easy",
-    "difficult": "hard",
-    "challenging": "hard",
-    "tough": "hard",
-    "arduous": "hard",
-    "demanding": "hard",
-    "excellent": "good",
-    "great": "good",
-    "fine": "good",
-    "superb": "good",
-    "wonderful": "good",
-    "outstanding": "good",
-    "poor": "bad",
-    "terrible": "bad",
-    "awful": "bad",
-    "dreadful": "bad",
-    "inferior": "bad",
-    "certain": "sure",
-    "confident": "sure",
-    "positive": "sure",
-    "convinced": "sure",
-    "numerous": "many",
-    "multiple": "many",
-    "several": "many",
-    "various": "many",
-    "scarce": "few",
-    "rare": "few",
-    "limited": "few",
-    "warm": "hot",
-    "heated": "hot",
-    "scorching": "hot",
-    "burning": "hot",
-    "chilly": "cold",
-    "cool": "cold",
-    "freezing": "cold",
-    "frigid": "cold",
-    "icy": "cold"
+    "gradually": "slowly",
+    "frequently": "often",
+    "commonly": "often",
+    "regularly": "often",
+    "seldom": "rarely",
+    "infrequently": "rarely",
+    "constantly": "always",
+    "continually": "always",
+    "perpetually": "always",
+    "not ever": "never",
+    "properly": "well",
+    "correctly": "well",
+    "effectively": "well",
+    "poorly": "badly",
+    "inadequately": "badly"
   }
 }

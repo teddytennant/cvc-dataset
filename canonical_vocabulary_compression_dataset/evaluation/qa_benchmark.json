@@ -1,0 +1,170 @@
+{
+  "metadata": {
+    "task": "question_answering",
+    "description": "Question answering benchmark for CVC evaluation",
+    "total_samples": 50,
+    "question_types": ["factual", "inference", "multiple_facts"]
+  },
+  "qa_pairs": [
+    {
+      "id": 1,
+      "context": "The enormous research facility housed numerous laboratories where brilliant scientists conducted vital experiments. The massive building contained state-of-the-art equipment procured from various manufacturers worldwide.",
+      "question": "What did the research facility contain?",
+      "answer": "laboratories",
+      "answer_variants": ["numerous laboratories", "laboratories where scientists conducted experiments"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "context": "After an arduous journey through frigid conditions, the expedition team discovered a magnificent cave system. The vast network of tunnels extended for miles underground.",
+      "question": "What did the team discover?",
+      "answer": "a cave system",
+      "answer_variants": ["magnificent cave system", "cave system"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "context": "The astute businesswoman utilized innovative strategies to build a substantial corporation. Her clever approach to market analysis and swift decision-making facilitated rapid growth.",
+      "question": "What contributed to the rapid growth?",
+      "answer": "market analysis and swift decision-making",
+      "answer_variants": ["innovative strategies", "clever approach to market analysis and swift decision-making"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 4,
+      "context": "The ancient manuscript, discovered in a tiny village, revealed crucial information about historical events. Scholars examined the delicate document with tremendous care.",
+      "question": "Where was the manuscript discovered?",
+      "answer": "in a tiny village",
+      "answer_variants": ["tiny village", "a village"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 5,
+      "context": "The intelligent student devised an elegant solution to the challenging mathematical problem. Her brilliant insight demonstrated exceptional understanding of complex principles.",
+      "question": "What did the student's insight demonstrate?",
+      "answer": "exceptional understanding",
+      "answer_variants": ["exceptional understanding of complex principles", "understanding of complex principles"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 6,
+      "context": "The organization implemented a comprehensive strategy to address the critical shortage of essential resources. Their swift response and excellent coordination prevented a potential crisis.",
+      "question": "What prevented the crisis?",
+      "answer": "swift response and excellent coordination",
+      "answer_variants": ["swift response and coordination", "response and coordination"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "context": "In the gorgeous mountain valley, numerous species of wildlife thrived. The pristine environment provided abundant food and shelter for the diverse animal population.",
+      "question": "What did the environment provide?",
+      "answer": "food and shelter",
+      "answer_variants": ["abundant food and shelter", "food and shelter for animals"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 8,
+      "context": "The cutting-edge technology firm fabricated miniature devices with tremendous computing power. Engineers utilized advanced manufacturing techniques to produce the complex components.",
+      "question": "What did engineers use to produce components?",
+      "answer": "advanced manufacturing techniques",
+      "answer_variants": ["manufacturing techniques", "advanced techniques"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 9,
+      "context": "The renowned artist created a stunning sculpture using unconventional materials. Her innovative approach and superb craftsmanship earned widespread acclaim from critics.",
+      "question": "What earned acclaim from critics?",
+      "answer": "innovative approach and superb craftsmanship",
+      "answer_variants": ["approach and craftsmanship", "her work"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 10,
+      "context": "During the intense competition, the swift athlete demonstrated remarkable endurance. Despite the arduous course, she maintained a rapid pace throughout the race.",
+      "question": "What did the athlete maintain?",
+      "answer": "a rapid pace",
+      "answer_variants": ["rapid pace", "pace"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 11,
+      "context": "The massive library contained an extensive collection of ancient texts. Scholars from numerous countries visited to examine the rare manuscripts and precious documents.",
+      "question": "Who visited the library?",
+      "answer": "scholars",
+      "answer_variants": ["scholars from numerous countries", "scholars from different countries"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 12,
+      "context": "The ambitious project required substantial funding and tremendous effort. The dedicated team worked through challenging obstacles to achieve their crucial objectives.",
+      "question": "What did the team work through?",
+      "answer": "challenging obstacles",
+      "answer_variants": ["obstacles", "difficult obstacles"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 13,
+      "context": "The innovative startup developed an elegant software platform that revolutionized the industry. Their brilliant engineers utilized cutting-edge techniques to create the sophisticated system.",
+      "question": "What revolutionized the industry?",
+      "answer": "software platform",
+      "answer_variants": ["elegant software platform", "the platform"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 14,
+      "context": "In the serene garden, visitors strolled along winding paths admiring the gorgeous flowers. The peaceful atmosphere provided an ideal setting for quiet contemplation.",
+      "question": "What did the atmosphere provide?",
+      "answer": "an ideal setting",
+      "answer_variants": ["ideal setting for contemplation", "setting for quiet contemplation"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 15,
+      "context": "The experienced surgeon performed the delicate operation with tremendous precision. Her exceptional skill and calm demeanor reassured the anxious patient.",
+      "question": "What reassured the patient?",
+      "answer": "exceptional skill and calm demeanor",
+      "answer_variants": ["skill and demeanor", "surgeon's skill and calm demeanor"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 16,
+      "context": "The documentary revealed crucial details about the controversial policy. Investigators discovered substantial evidence through their exhaustive research.",
+      "question": "How did investigators discover evidence?",
+      "answer": "through exhaustive research",
+      "answer_variants": ["through research", "exhaustive research"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 17,
+      "context": "The towering skyscraper dominated the urban skyline with its magnificent architecture. The enormous structure housed numerous businesses and attracted visitors worldwide.",
+      "question": "What attracted visitors worldwide?",
+      "answer": "the structure",
+      "answer_variants": ["enormous structure", "the building", "skyscraper"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 18,
+      "context": "The comprehensive study examined the effects of climate change on vulnerable ecosystems. Researchers utilized sophisticated instruments to gather precise measurements.",
+      "question": "What did researchers use instruments for?",
+      "answer": "to gather measurements",
+      "answer_variants": ["to gather precise measurements", "gathering measurements"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 19,
+      "context": "The acclaimed novel portrayed the struggles of ordinary people during turbulent times. The author's vivid descriptions and compelling narrative captivated millions of readers.",
+      "question": "What captivated readers?",
+      "answer": "vivid descriptions and compelling narrative",
+      "answer_variants": ["descriptions and narrative", "author's writing"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 20,
+      "context": "The festival celebrated the region's rich cultural heritage with traditional music and dance. Performers from various communities participated in the joyful event.",
+      "question": "Who participated in the event?",
+      "answer": "performers",
+      "answer_variants": ["performers from various communities", "performers from communities"],
+      "difficulty": "easy"
+    }
+  ]
+}
