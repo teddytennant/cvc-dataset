@@ -1,0 +1,104 @@
+{
+  "dataset_size": 90,
+  "original_vocabulary": {
+    "total_words": 733,
+    "unique_words": 477,
+    "most_common": [
+      [
+        "the",
+        105
+      ],
+      [
+        "to",
+        20
+      ],
+      [
+        "she",
+        15
+      ],
+      [
+        "they",
+        14
+      ],
+      [
+        "he",
+        12
+      ],
+      [
+        "a",
+        11
+      ],
+      [
+        "in",
+        10
+      ],
+      [
+        "for",
+        8
+      ],
+      [
+        "at",
+        7
+      ],
+      [
+        "their",
+        7
+      ]
+    ]
+  },
+  "canonical_vocabulary": {
+    "total_words": 738,
+    "unique_words": 397,
+    "most_common": [
+      [
+        "the",
+        105
+      ],
+      [
+        "to",
+        20
+      ],
+      [
+        "she",
+        15
+      ],
+      [
+        "they",
+        14
+      ],
+      [
+        "he",
+        12
+      ],
+      [
+        "a",
+        11
+      ],
+      [
+        "in",
+        10
+      ],
+      [
+        "at",
+        8
+      ],
+      [
+        "for",
+        8
+      ],
+      [
+        "very",
+        8
+      ]
+    ]
+  },
+  "vocabulary_reduction": {
+    "words_reduced": 80,
+    "reduction_rate": 0.16771488469601678
+  },
+  "replacement_statistics": {
+    "total_words": 733,
+    "total_replacements": 66,
+    "replacement_rate": 0.09004092769440655
+  }
+}

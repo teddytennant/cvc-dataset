@@ -3,6 +3,10 @@
 ## High Priority Improvements
 
 ### 1. Scale & Validation
+- [x] **COMPLETED**: Establish baseline metrics with basic evaluation
+  - Dataset: 90 sentence pairs
+  - Vocabulary reduction: 16.77% (477 → 397 unique words)
+  - Replacement rate: 9.00% (66/733 words)
 - [ ] Expand training corpus from 2,500 to 10,000+ sentences with diverse structures
 - [ ] Run actual BERTScore and Sentence-BERT evaluations (currently simulated)
 - [ ] Conduct real model training experiments comparing canonical vs original data
