@@ -1,0 +1,28 @@
+# Rust build artifacts
+rust_cvc/target/
+rust_cvc/Cargo.lock
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Environment
+.env
+venv/
+env/
