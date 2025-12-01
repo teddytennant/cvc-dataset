@@ -6,6 +6,8 @@ A comprehensive research dataset for evaluating canonical vocabulary compression
 
 Canonical Vocabulary Compression (CVC) is a proposed paradigm for LLM efficiency that preprocesses both training data and user inputs to eliminate lexical redundancy. This dataset provides synonym-to-canonical mappings, processed training samples, evaluation benchmarks, and implementation tools for researching this approach.
 
+**Original Paper**: [Canonical Vocabulary Compression](https://github.com/teddytennant/Papers/blob/main/Canonical_Vocabulary_Compression.pdf)
+
 ## Quick Start
 
 ### Installation
