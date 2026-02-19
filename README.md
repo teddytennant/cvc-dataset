@@ -1,13 +1,34 @@
-# CVC Dataset - Canonical Vocabulary Compression
+# Canonical Vocabulary Compression (CVC) Dataset
 
-This dataset is part of research on canonical vocabulary compression techniques. For a detailed exploration of the methodology and findings, refer to the [Canonical Vocabulary Compression paper](https://theodoretennant.vercel.app/papers/vocabulary-compression-paper.html).
+A research dataset for evaluating canonical vocabulary compression in large language models. CVC preprocesses training data and user inputs to eliminate lexical redundancy by mapping synonyms to canonical forms.
 
-## Overview
+For a detailed exploration of the methodology, see the [CVC paper](https://theodoretennant.vercel.app/papers/vocabulary-compression-paper.html).
 
-This dataset supports experiments in vocabulary compression, exploring how canonical representations can reduce vocabulary size while maintaining semantic information and model performance.
+## Quick Start
 
-## Usage
+```bash
+cd canonical_vocabulary_compression_dataset/scripts
+pip install -r requirements.txt
+python demo_usage.py
+```
 
-The dataset and corresponding paper demonstrate approaches to compress vocabularies used in language models, with implications for model efficiency and downstream task performance.
+```python
+from scripts.apply_cvc import CVCProcessor
 
-For more information on the methodology and results, please see the full paper linked above.
+processor = CVCProcessor('mappings/synonym_to_canonical.json')
+canonical, stats = processor.process_text("The enormous building has numerous beautiful rooms.")
+# Output: "The big building has many beautiful rooms."
+```
+
+## Dataset Contents
+
+- **250+ synonym mappings** across 36 semantic categories
+- **100 sample training pairs** (original + canonical)
+- **Evaluation benchmarks** for classification, similarity, QA, and generation
+- **Python tools** for preprocessing and evaluation
+
+See [`canonical_vocabulary_compression_dataset/README.md`](canonical_vocabulary_compression_dataset/README.md) for full documentation.
+
+## License
+
+MIT License - see LICENSE file for details.

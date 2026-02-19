@@ -206,7 +206,7 @@ Based on theoretical analysis (requires empirical validation):
   author={Research Community},
   year={2025},
   description={Dataset for evaluating canonical vocabulary compression in LLMs},
-  url={https://github.com/yourusername/cvc-dataset}
+  url={https://github.com/teddytennant/cvc-dataset}
 }
 ```
 
