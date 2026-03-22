@@ -11,14 +11,14 @@ expanded_mappings = {
         "version": "2.0",
         "description": "Comprehensive synonym-to-canonical mappings for CVC dataset",
         "creation_date": "2025-11-30",
-        "total_mappings": 550,
+        "total_mappings": 0,
         "sources": ["WordNet", "Manual Curation", "Frequency Analysis"]
     },
     "mappings": {
         # SIZE ADJECTIVES
         "size_big": {
             "canonical": "big",
-            "synonyms": ["large", "huge", "enormous", "gigantic", "massive", "immense", "colossal", "vast", "substantial", "grand", "great", "sizable", "considerable", "extensive", "voluminous"],
+            "synonyms": ["large", "huge", "enormous", "gigantic", "massive", "immense", "colossal", "vast", "substantial", "grand", "sizable", "considerable", "extensive", "voluminous"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -36,13 +36,13 @@ expanded_mappings = {
         },
         "size_short": {
             "canonical": "short",
-            "synonyms": ["low", "squat", "stubby", "compact"],
+            "synonyms": ["low", "squat", "stubby"],
             "frequency_rank": 1,
             "domain": "general"
         },
         "size_wide": {
             "canonical": "wide",
-            "synonyms": ["broad", "expansive", "extensive", "spacious", "ample"],
+            "synonyms": ["broad", "expansive", "spacious", "ample"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -54,7 +54,7 @@ expanded_mappings = {
         },
         "size_thick": {
             "canonical": "thick",
-            "synonyms": ["dense", "heavy", "substantial", "chunky"],
+            "synonyms": ["dense", "heavy", "chunky"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -82,7 +82,7 @@ expanded_mappings = {
         },
         "intelligence_dumb": {
             "canonical": "dumb",
-            "synonyms": ["stupid", "foolish", "ignorant", "unintelligent", "dense", "dim", "dull"],
+            "synonyms": ["stupid", "foolish", "ignorant", "unintelligent", "dull"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -110,7 +110,7 @@ expanded_mappings = {
         },
         "emotion_sad": {
             "canonical": "sad",
-            "synonyms": ["unhappy", "sorrowful", "melancholy", "dejected", "gloomy", "downcast", "depressed", "miserable", "mournful", "woeful", "dismal"],
+            "synonyms": ["unhappy", "sorrowful", "melancholy", "dejected", "gloomy", "downcast", "depressed", "miserable", "mournful", "woeful"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -280,13 +280,13 @@ expanded_mappings = {
         # LIGHT ADJECTIVES
         "light_bright": {
             "canonical": "bright",
-            "synonyms": ["luminous", "brilliant", "radiant", "vivid", "glowing"],
+            "synonyms": ["luminous", "vivid", "glowing"],
             "frequency_rank": 1,
             "domain": "general"
         },
         "light_dark": {
             "canonical": "dark",
-            "synonyms": ["dim", "shadowy", "gloomy", "murky", "dusky"],
+            "synonyms": ["dim", "shadowy", "murky", "dusky"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -314,7 +314,7 @@ expanded_mappings = {
         },
         "noise_quiet": {
             "canonical": "quiet",
-            "synonyms": ["silent", "hushed", "muted", "soft", "peaceful"],
+            "synonyms": ["silent", "hushed", "muted", "soft"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -404,7 +404,7 @@ expanded_mappings = {
         },
         "verb_see": {
             "canonical": "see",
-            "synonyms": ["notice", "spot", "perceive", "detect", "discern"],
+            "synonyms": ["notice", "perceive", "detect", "discern"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -428,7 +428,7 @@ expanded_mappings = {
         },
         "verb_touch": {
             "canonical": "touch",
-            "synonyms": ["feel", "handle", "grasp"],
+            "synonyms": ["feel", "handle"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -442,7 +442,7 @@ expanded_mappings = {
         },
         "verb_know": {
             "canonical": "know",
-            "synonyms": ["understand", "comprehend", "grasp", "realize"],
+            "synonyms": ["understand", "comprehend", "realize"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -460,7 +460,7 @@ expanded_mappings = {
         },
         "verb_learn": {
             "canonical": "learn",
-            "synonyms": ["study", "master", "acquire"],
+            "synonyms": ["study", "master"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -522,7 +522,7 @@ expanded_mappings = {
         },
         "verb_find": {
             "canonical": "find",
-            "synonyms": ["discover", "locate", "uncover", "detect"],
+            "synonyms": ["discover", "locate", "uncover"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -546,7 +546,7 @@ expanded_mappings = {
         },
         "verb_take": {
             "canonical": "take",
-            "synonyms": ["grab", "seize", "grasp", "capture"],
+            "synonyms": ["grab", "seize", "capture"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -564,7 +564,7 @@ expanded_mappings = {
         },
         "verb_buy": {
             "canonical": "buy",
-            "synonyms": ["purchase", "acquire"],
+            "synonyms": ["purchase"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -668,7 +668,7 @@ expanded_mappings = {
         },
         "noun_place": {
             "canonical": "place",
-            "synonyms": ["location", "spot", "site", "position"],
+            "synonyms": ["location", "spot", "site"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -724,7 +724,7 @@ expanded_mappings = {
         },
         "adverb_slowly": {
             "canonical": "slowly",
-            "synonyms": ["gradually", "leisurely"],
+            "synonyms": ["gradually"],
             "frequency_rank": 1,
             "domain": "general"
         },
@@ -748,7 +748,7 @@ expanded_mappings = {
         },
         "adverb_never": {
             "canonical": "never",
-            "synonyms": ["not ever"],
+            "synonyms": [],
             "frequency_rank": 1,
             "domain": "general"
         },
