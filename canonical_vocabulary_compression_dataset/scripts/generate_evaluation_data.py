@@ -6,6 +6,8 @@ Generate comprehensive evaluation dataset with meaning retention scores
 import json
 import random
 
+random.seed(42)  # For reproducibility
+
 # Sample sentence pairs for evaluation
 evaluation_pairs = [
     # Size adjectives
