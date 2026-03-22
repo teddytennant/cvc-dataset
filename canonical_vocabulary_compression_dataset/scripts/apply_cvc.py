@@ -101,6 +101,8 @@ class CVCProcessor:
 
     def _preserve_case(self, original: str, canonical: str) -> str:
         """Preserve the capitalization pattern of original word."""
+        if not original or not canonical:
+            return canonical
         if original.isupper():
             return canonical.upper()
         elif original[0].isupper():
