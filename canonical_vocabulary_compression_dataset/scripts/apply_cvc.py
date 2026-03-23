@@ -51,16 +51,43 @@ class CVCProcessor:
         replacements = []
 
         for i, word in enumerate(words):
-            # Extract word without punctuation
-            match = re.match(r'^([^\w]*)(\w+)([^\w]*)$', word)
+            # Extract word without punctuation (supports hyphenated words)
+            match = re.match(r'^([^\w]*)([\w]+(?:-[\w]+)*)([^\w]*)$', word)
             if not match:
                 processed_words.append(word)
                 continue
 
             prefix, core_word, suffix = match.groups()
 
-            # Check for canonical mapping
+            # Check for canonical mapping (try full word first,
+            # then individual hyphenated parts)
             canonical = self._get_canonical(core_word)
+
+            if not canonical and '-' in core_word:
+                # Process each hyphenated part individually
+                parts = core_word.split('-')
+                mapped_parts = []
+                any_replaced = False
+                for part in parts:
+                    part_canonical = self._get_canonical(part)
+                    if part_canonical:
+                        if preserve_case:
+                            part_canonical = self._preserve_case(part, part_canonical)
+                        mapped_parts.append(part_canonical)
+                        any_replaced = True
+                    else:
+                        mapped_parts.append(part)
+                if any_replaced:
+                    processed_words.append(f"{prefix}{'-'.join(mapped_parts)}{suffix}")
+                    replacements.append({
+                        'position': i,
+                        'original': core_word,
+                        'canonical': '-'.join(mapped_parts)
+                    })
+                    continue
+                else:
+                    processed_words.append(word)
+                    continue
 
             if canonical:
                 # Preserve original capitalization pattern
